@@ -1,0 +1,29 @@
+/* OTHER SITES JQUERY TOGGLE MENU */
+/* ////////////////////////////////// */
+
+.accordion-toggle {
+    cursor: pointer;
+    width: 90%;
+}
+.accordion-toggle span {
+    float:right;
+    cursor: pointer;
+}
+.accordion-content {
+    display: none;
+    width: 80%;
+}
+.accordion-content p {
+    font-size: 1.2rem;
+}
+.accordion-content.default {
+    display: block;
+}
+.otherSites ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.otherSites > p {
+    margin-bottom: 1.5em;
+}

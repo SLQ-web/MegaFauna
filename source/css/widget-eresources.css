@@ -1,0 +1,49 @@
+/* ERESOURCES (FLICKITY) SLIDER */
+/* ////////////////////////////////// */
+
+#slideCard1 .main-gallery {
+    overflow: hidden;
+}
+
+#slideCard1 .gallery-cell {
+  height: 173px;
+    padding: 15px;
+    width: 100%;
+}
+
+#slideCard1 .gallery-cell img {
+	float:right;
+}
+
+#slideCard1 .front .main-gallery .gallery-cell, #slideCard1 .back {
+    padding: 10px;
+}
+
+.gallery-cell.lynda{
+	background:gold;
+}
+.gallery-cell.lynda img{
+	margin-left:20px;
+	margin-right:25px;
+	padding-top:10px;
+}
+.gallery-cell.anz{
+	background:powderblue;
+}
+
+.gallery-cell.anz img{
+	margin-left:20px;
+	height:130px;
+}
+
+.gallery-cell.proquest{
+	background: palegreen;
+}
+
+.gallery-cell.proquest img{
+	width:200px;
+	margin-left:20px;
+	padding-bottom:40px;
+	margin-top:25px;
+	margin-right:30px;
+}

@@ -1,0 +1,62 @@
+/*Will start combining CSS in prep for moving to Squiz Matrix environment*/
+
+* { box-sizing: border-box; }
+
+/* GRID FRAMEWORK */
+/* ///////////////////////////////// */
+
+/* force scroll bar */
+html { overflow-y: scroll; }
+
+body { margin:0;padding:0;}
+.content { width: 960px; }
+
+/* ---- grid ---- */
+
+.grid {
+/*  background: #DDD;*/
+}
+
+.grid-item .grid-content {
+    height: 285px;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.stamp {  border-color: aquamarine; }
+.stamp1 { left: 0%; top: 0; }
+.stamp2 { right: 0%; top: 200; }
+
+.grid-item {
+  float: left;
+  padding: 5px;
+/*  border: 1px solid red;*/
+}
+
+.grid-content {
+    padding: 0;
+    border:solid 1px cyan;
+}
+
+.grid-item.is-dragging,
+.grid-item.is-positioning-post-drag {
+  background: #C90;
+  z-index: 2;
+}
+
+.packery-drop-placeholder {
+  outline: 3px dashed #444;
+  outline-offset: -6px;
+  /* transition position changing */
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+}
+
+.gutter-sizer { width: 1%; }

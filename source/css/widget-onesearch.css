@@ -1,0 +1,6 @@
+form.oneSearch input[type=text] {
+    width: 60%;
+}
+form.oneSearch select {
+    width: 20%;
+}

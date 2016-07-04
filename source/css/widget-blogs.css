@@ -1,0 +1,11 @@
+/* BLOG FEED PANEL STYLES */
+/* ////////////////////////////////// */
+
+.soldierPortrait { 
+	background-image:  url(../img/blogs/demo-lindeman.jpg); 
+	background-size: cover; 
+	background-position: bottom;
+	color:#FFF000;
+	text-shadow:1px 1px 0 rgba(0,0,0,0.2);
+	padding:15px;
+}

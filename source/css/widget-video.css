@@ -1,0 +1,12 @@
+/* EMBEDDED VIDEO */
+/* ////////////////////////////////// */
+
+.video{
+	margin:0;
+	padding:0;
+}
+
+iframe body {
+    margin: 0;
+    padding: 0;
+}

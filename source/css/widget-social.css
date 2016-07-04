@@ -1,0 +1,28 @@
+/* DYNAMIC INSTAGRAM PANEL */
+/* ////////////////////////////////// */
+
+.social{
+	margin:0;
+	padding:0;
+}
+
+table{
+	width:100%;
+	width:100%;
+}
+
+td{
+	width:100px;
+	height:90px;
+	text-align:center;
+}
+
+.social-icon{
+	width:84px;
+	height:84px;
+}
+
+/* IE8 Fix for the Instagram feed */
+#instafeed .instafallback {
+    display: none;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "slqhomepage",
+  "version": "1.0.0",
+  "description": "Project file to build new SLQ homepage based on Packery and Bootstrap Grid system. Mobile first, responsive design.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Packery",
+    "Flickity",
+    "Card",
+    "Flip",
+    "Bootstrap",
+    "SLQ",
+    "State",
+    "Library",
+    "Queensland",
+    "Panels",
+    "Widgets"
+  ],
+  "author": "SLQ Web Team",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^1.5.4",
+    "gulp-useref": "^3.1.0"
+  }
+}

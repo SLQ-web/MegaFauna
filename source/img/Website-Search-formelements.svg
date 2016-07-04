@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-174 390.9 842 60"
+	 style="enable-background:new -174 390.9 842 60;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:4;}
+	.st1{fill:none;stroke:#000000;stroke-width:4;}
+	.st2{fill:none;stroke:#000000;stroke-width:4;stroke-linecap:square;}
+</style>
+<title>form elements</title>
+<desc>Created with Sketch.</desc>
+<g id="Treatment" sketch:type="MSPage">
+	<g id="Treatment-3:-Big-search" transform="translate(-274.000000, -264.000000)" sketch:type="MSArtboardGroup">
+		<g id="One-Search" transform="translate(250.000000, 171.000000)" sketch:type="MSLayerGroup">
+			<g id="form-elements" transform="translate(24.000000, 93.000000)">
+				<rect id="Rectangle-13" x="-170.6" y="390.9" sketch:type="MSShapeGroup" class="st0" width="745.6" height="60">
+				</rect>
+				<g id="icon" transform="translate(776.000000, 0.000000)" sketch:type="MSShapeGroup">
+					<rect id="Rectangle-13-Copy" x="-179.7" y="390.9" class="st0" width="62.7" height="60"/>
+					<path id="Oval-1" class="st1" d="M-152.4,429.9c6.8,0,12.3-5.4,12.3-12c0-6.6-5.5-12-12.3-12s-12.3,5.4-12.3,12
+						C-164.7,424.5-159.2,429.9-152.4,429.9z"/>
+					<path id="Line" class="st2" d="M-142.6,425.4l11.3,11"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

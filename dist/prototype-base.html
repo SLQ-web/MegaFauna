@@ -1,0 +1,481 @@
+<!doctype html>
+<html>
+<head>
+<title>Alpha Prototype with Bootstrap (v2)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="stylesheet" href="css/styles.min.css">
+
+<!-- Conditional IE handlers for all the stuff that can't be handled by modernizr or code optimisation to work on older IE browsers -->
+<!--Fix to show static instagram panel only for IE8!-->
+<!--[if lte IE 8]>
+<style type="text/css">
+#instafeed .instafallback {
+    display: block;
+    height: 285px;
+    background-color: purple;
+    background-repeat: no-repeat;
+}
+</style>
+<![endif]-->
+
+<script src="js/header-main-min.js"></script>
+
+<!-- Code for SVG rollovers, make the svg code appear inline -->
+<script>
+    jQuery(document).ready(function() {
+        /*
+         * Replace all SVG images with inline SVG
+         */
+            jQuery('img.openSvgLogo').each(function(){
+                var $img = jQuery(this);
+                var imgID = $img.attr('id');
+                var imgClass = $img.attr('class');
+                var imgURL = $img.attr('src');
+
+                jQuery.get(imgURL, function(data) {
+                    // Get the SVG tag, ignore the rest
+                    var $svg = jQuery(data).find('svg');
+
+                    // Add replaced image's ID to the new SVG
+                    if(typeof imgID !== 'undefined') {
+                        $svg = $svg.attr('id', imgID);
+                    }
+                    // Add replaced image's classes to the new SVG
+                    if(typeof imgClass !== 'undefined') {
+                        $svg = $svg.attr('class', imgClass+' replaced-svg');
+                    }
+
+                    // Remove any invalid XML tags as per http://validator.w3.org
+                    $svg = $svg.removeAttr('xmlns:a');
+
+                    // Replace image with new SVG
+                    $img.replaceWith($svg);
+                });
+            });
+    });
+</script>
+</head>
+
+<body>
+
+<!-- Code for facebook embedded feed -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=576026539102980";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="container"> <a class="slq-logo"><img src="img/Prototype%20device.svg" /></a>
+    <img src="img/Prototype%20header.svg" width="100%" /> 
+  
+  <div class="grid"> <!-- start of the packery grid -->
+    <div class="grid-item col-xs-12 col-sm-6 col-md-8">
+      <div class="grid-content">
+        <div id="whatsOn">
+          <div class="main-gallery">
+            <div class="gallery-cell">
+              <div id="sow">
+                <h3><a href="http://qanzac100.slq.qld.gov.au/showcase/a-state-of-war">A State of War</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+              </div>
+            </div>
+            <div class="gallery-cell ">
+              <div id="iconic">
+                <h3><a href="http://www.slq.qld.gov.au/showcase/the-william-jolly-bridge">Iconic Queensland</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+              </div>
+            </div>
+            <div class="gallery-cell">
+              <div id="uqarch">
+                <h3><a href="http://www.slq.qld.gov.au/whats-on/calevents/general/talks/apdl/uq-architecture-lecture-series-2016">UQ Architecture Lecture Series</a></h3>
+                <p><b>Free weekly lectures | 1 Mar - 26 Apr</b></p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+              </div>
+            </div>
+            <div class="gallery-cell">
+              <div id="qrf">
+                <h2><a href="http://www.slq.qld.gov.au/whats-on/awards/qmawards">Queensland Research Fellowships</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+              </div>
+            </div>
+            <div class="gallery-cell">
+              <div id="aparch">
+                <h2><a href="http://aparchitectureforum.com/">Asia Pacific Architecture forum</a></h2>
+                <p><b>Events, exhibitions &amp; more | 1 -14 Mar</b></p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+              </div>
+            </div>
+            <div class="gallery-cell">
+              <div id="bw">
+                <h2><a href="http://www.slq.qld.gov.au/whats-on/awards/blackwrite/fellowships">black&amp;write!</a></h2>
+                <p><b>Indigenous Writing Fellowships | Applications close Fri 26 Feb</b></p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+              </div>
+            </div>
+            <div class="gallery-cell">
+              <div id="qldfaces">
+                <h2><a href="http://www.slq.qld.gov.au/whats-on/calevents/general/exhibitions/queensland-faces">#queensland faces</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                <p><b>Free exhibition | Until 8 May</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="grid-item col-xs-12 col-sm-6 col-md-4">
+      <div class="grid-content">
+        <div class="flip-container">
+          <div id="timerCard">
+            <div class="timerFront">
+              <h3><img src="img/time-icon.svg" class="clock tile-title-icon" onerror="this.src='img/time-icon.png'; this.onerror=null;" />Opening hours</h3>
+              <p class="text-lge">Mon-Thu <strong>10am - 8pm</strong><br />
+              Fri-Sun <strong>10am - 5pm</strong></p>
+              <p id="countdown"></p>
+              <p id="otherTimes">Special areas &amp; public holidays</p>
+            </div>
+            <div class="timerBack">
+                <p><strong>Infozone (Level 1)</strong><br />
+                Mon &ndash; Thu 9am&ndash;8pm, Fri 9am&ndash;5pm, Sat &ndash; Sun 10am&ndash;5pm</p>
+                <p><strong>John Oxley Library (Level 4)</strong><br />
+                Open daily 10am&ndash;5pm</p>
+                <p><strong>The Corner (Level 1)</strong><br  />
+                Open daily 10am&ndash;3pm. Including weekends, school and public holidays</p>
+                <p><strong>The Edge</strong><br />
+                Open Tue &ndash; Sat 12–8pm, Sun 12–6pm</p>
+                <p id="mainTimes">Click to turn back</p>
+            </div>
+         </div>
+      </div>
+      </div>
+    </div>
+    
+    <div class="grid-item col-xs-12">
+      <div class="grid-content">
+        <div class="flip-onesearch-container">
+          <div id="onesearch">
+            <div class="front-search" style="">
+              <h3>One search catalogue</h3>
+                <script type="text/javascript">// <![CDATA[
+                    // SLQ One Search Search Box
+                    // 2013-12-06 NE. With scopes 2016-06-09 SAS
+
+                        function searchPrimo() {
+                            var tempQueryValue = document.getElementById("primoQueryTemp").value;
+                            var tempQueryScopeValue = document.getElementById("primoQueryScope").value;
+                            var searchURL = "http://onesearch.slq.qld.gov.au/primo_library/libweb/action/dlSearch.do?dscnt=1&onCampus=false&group=Guest&vid=SLQ&institution=SLQ";
+                            var searchQuery = "&query=any,contains," + tempQueryValue.replace(/\,/g,"");
+                            var searchQueryScope = "&search_scope=" +tempQueryScopeValue.replace(/\,/g,"");
+                            location.href = searchURL + searchQuery + searchQueryScope;
+                            return false;
+                        }
+
+                        function searchPrimoEvent(event) {
+                            var tempQueryValue = document.getElementById("primoQueryTemp").value;
+                            document.getElementById("primoQuery").value = "any,contains," + tempQueryValue.replace(/\,/g,"");
+                        }
+
+                    // ]]></script>
+
+                  <form action="http://onesearch.slq.qld.gov.au/primo_library/libweb/action/dlSearch.do" method="get" name="searchForm" id="SLQOS">
+                    <input name="dscnt" value="1" type="hidden">  
+                    <input name="onCampus" value="false" type="hidden">
+                    <input name="group" value="Guest" type="hidden">
+                    <input name="vid" value="SLQ" type="hidden">
+                    <input name="institution" value="SLQ" type="hidden">
+                    <input id="primoQuery" name="query" type="hidden">
+                    <input id="primoQueryTemp" onKeyPress="return searchPrimoEvent(event)" name="queryTemp" value="" type="text">
+                    <select id="primoQueryScope">
+                        <option value="SLQ_PCI_EBSCO">SLQ collections + eresources</option>
+                        <option value="SLQ">SLQ Collections</option>
+                        <option value="SRL">Information collections</option>
+                        <option value="OAC">Open Access Collections</option>
+                        <option value="ALA">Australian Library of Art</option>
+                        <option value="JOL">John Oxley Library</option>
+                        <option value="DT">SLQ digitised collections</option>
+                        <option value="OM">Original Materials</option>
+                        <option value="FHCOMBINED">SLQ Family History Indexes</option>
+                    </select>
+                    <button id="go" class="searchbutton" type="button" onClick="searchPrimo()">Search</button>
+                  </form>
+              <p>Meet the One Search catalogue! A record of SLQ's holdings and access to costly databses of scientific, social and cultural literature. </p>
+              <p><b>The key to the library</b></p>
+              <p id="search-lib">Search the SLQ  Website</p>
+            </div>
+            <div class="back-search" style="">
+              <h3>SLQ Website search</h3>
+              <p>A set of interconnected webpages, prepared and maintained as a collection of information by SLQ.</p>
+              <p><b>The face of the library</b></p>
+              <p id="search-web">Search the One search catalogue</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="grid-item col-xs-12 col-sm-6 col-md-4">
+      <div class="grid-content social">
+          <div id="instafeed">
+            <div class="instafallback">
+                <table>
+                  <tr>
+                    <td><a href="https://twitter.com/slqld"><img src="img/social/iconmonstr-twitter-4-icon.png" class="social-icon" /></a></td>
+                    <td><a href="https://www.facebook.com/statelibraryqld/"><img src="img/social/iconmonstr-facebook-4-icon.png" class="social-icon" /></a></td>
+                    <td><a href="https://www.instagram.com/statelibraryqld/"><img src="img/social/iconmonstr-instagram-9-icon.png" class="social-icon active-social-data" /></a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://au.pinterest.com/SLQShop/"><img src="img/social/iconmonstr-pinterest-1.png" class="social-icon" /></a></td>
+                    <td><a href="https://vimeo.com/statelibraryqld"><img src="img/social/iconmonstr-vimeo-4-icon.png" class="social-icon" /></a></td>
+                    <td><a href="https://www.youtube.com/user/statelibraryqld"><img src="img/social/iconmonstr-youtube-4-icon.png" class="social-icon" /></a></td>
+                  </tr>
+                  <tr>
+                    <td><img src="img/social/iconmonstr-map-icon.png" class="social-icon" /></td>
+                    <td><img src="img/social/iconmonstr-layer-6-icon.png" class="social-icon" /></td>
+                    <td><img src="img/social/iconmonstr-light-bulb-3-icon.png" class="social-icon" /></td>
+                  </tr>
+                </table>
+            </div> 
+          </div>
+      </div>
+    </div>
+    
+<!--
+    <div class="grid-item col-xs-12 col-sm-6 col-md-4">
+      <div class="grid-content twitter">
+        <a class="twitter-timeline" data-height="285" href="https://twitter.com/AusCoolwebs">Tweets by AusCoolwebs</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+-->
+
+<!--
+    <div class="grid-item col-xs-12 col-sm-6 col-md-4">
+        <div class="grid-content facebook">
+            <div class="fb-page" data-href="https://www.facebook.com/statelibraryqld/" data-tabs="timeline" data-height="285" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/statelibraryqld/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/statelibraryqld/">State Library of Queensland</a></blockquote>
+            </div>
+        </div>
+    </div>
+-->
+
+    <div class="grid-item col-xs-12 col-sm-6 col-md-8">
+      <div class="grid-content">
+          <div class="eresources-description">
+            <h3>Eresources</h3>
+            <p>A brief description of the breadth of our resources &amp; what they might offer to the people of Queensland.</p>
+          </div>
+          <div id="slideCard1">
+            <div class="main-gallery" >
+              <div class="gallery-cell anz" > <img src="img/stack.png"/>
+                <h5><a href="#">ANZ Newstand</a></h5>
+                <p>a collection of over 400 newspapers and news services covering Australia and New Zealand. The archive goes back to the late 1990's - early 2000's. </p>
+              </div>
+              <div class="gallery-cell lynda"> <img src="img/lynda.png" />
+                <h5><a href="http://lynda.com">Lynda.com</a></h5>
+                <p>Courses for all levels cover technical skills, creative techniques, business strategies, and more. Find what you need in our growing library. New courses added weekly.</p>
+              </div>
+              <div class="gallery-cell proquest"> <img src="img/proquestlogo.png" />
+                <h5><a href="#">ProQuest Central</a></h5>
+                <p>ProQuest Central is the largest aggregated full-text database. With thousands of periodical titles &amp; millions of full-text articles available.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="grid-item col-xs-12 col-sm-6 col-md-4">
+      <div class="grid-content soldierPortrait">
+        <h2>Blogs</h2>
+        <p>Any time is a good time to explore Queensland. Who can resist a train ride through the cool ranges west of Cairns or a swim at the coast? Take a look at newly digitised heritage tourism booklets to plan your next trip. These booklets provide guides...</p>
+      </div>
+    </div>
+    
+    <div class="grid-item col-xs-12 col-sm-6 col-md-4">
+        <div class="grid-content">
+          <div class="flip-container">
+            <div id="card">
+              <div class="front" style="">
+                <h3>What is the oldest item in SLQ's collections?</h3>
+                <!--[if gte IE 9]><!-->
+                <svg id="info" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#fff" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 18.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25c.691 0 1.25.56 1.25 1.25s-.559 1.25-1.25 1.25zm1.961-5.928c-.904.975-.947 1.514-.935 2.178h-2.005c-.007-1.475.02-2.125 1.431-3.468.573-.544 1.025-.975.962-1.821-.058-.805-.73-1.226-1.365-1.226-.709 0-1.538.527-1.538 2.013h-2.01c0-2.4 1.409-3.95 3.59-3.95 1.036 0 1.942.339 2.55.955.57.578.865 1.372.854 2.298-.016 1.383-.857 2.291-1.534 3.021z"/>
+                </svg>
+                <!--<![endif]-->
+                <!--[if lte IE 8]>
+                <img src="img/card-info.png" id="info" />
+                <![endif]-->
+              </div>
+              <div class="back" style="">
+                <p>Our oldest collection item is a <b><a href="http://onesearch.slq.qld.gov.au/SLQ:SLQ_PCI_EBSCO:slq_alma21127022090002061" target="_blank" title="View One Search catalogue record for this item">cuneiform tablet</a></b> from ancient Iraq, dating to about 1850 B.C.</p>
+                <!--[if gte IE 9]><!-->
+                <svg id="resolveInfo" xmlns="http://www.w3.org/2000/svg" width="64" height="64
+                                  " fill="#fff" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.222 18.917c5.666-5.905-.629-10.828-5.011-7.706l1.789 1.789h-6v-6l1.832 1.832c7.846-6.07 16.212 4.479 7.39 10.085z"/>
+                </svg>
+                <!--<![endif]-->
+                <!--[if lte IE 8]>
+                <img src="img/card-resolveInfo.png" id="resolveInfo" />
+                <![endif]-->
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="grid-item col-xs-12 col-sm-6 col-md-4">
+      <div class="grid-content">
+        <h3>QLF campaign</h3>
+        <ul class="progressBar">
+          <li class='donations' data-width='60' data-target='100'>Funding</li>
+        </ul>
+        <p>All donations received by QLF between 2 February and 29 May 2016 to support SLQ will be matched by Creative Partnerships Australia once the total fundraising target is achieved.</p>
+      </div>
+    </div>
+    
+    <div class="grid-item col-xs-12 col-sm-6 col-md-8">
+        <div class="grid-content video">
+            <iframe width="100%" height="100%" class="youtube-player" id="youtube-player" src="https://www.youtube.com/embed/JuM-TA67Rbk?color=white&loop=1&showinfo=0&autohide=1&modestbranding=1&autoplay=0&controls=0&enablejsapi=1&playerapiid=ytplayer" frameborder="0" allowfullscreen allowscriptaccess="always"  autoplay="true" volume="0"></iframe>
+        </div>
+    </div>
+    
+    <div class="grid-item col-xs-12 col-sm-6 col-md-4">
+      <div class="grid-content">
+        <h3>kuril dhagun</h3>
+        <p>Located on Level 1 of our South Bank building, kuril dhagun is an indigenous space.</p>
+        <ul>
+          <li><a href="#">Lilla Watson artwork</a></li>
+          <li><a href="#">Possum skin cloak workshops</a></li>
+          <li><a href="#">Talking circle</a></li>
+        </ul>
+        <p class="aRight"><a href="#">Read more...</a></p>
+      </div>
+    </div>
+    
+ </div> <!-- end of packery grid -->
+
+    <div class="grid-item col-xs-12" id="otherSites">
+      <div class="grid-content otherSites">
+        <h3>Other sites</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="links col-xs-12 col-sm-6 col-md-4">
+          <ul>
+            <li>
+              <p class="accordion-toggle"><a href="http://qanzac100.slq.qld.gov.au">Q ANZAC 100</a><span class="toggleIcon">+</span></p>
+              <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </li>
+            <li>
+              <p class="accordion-toggle"><a href="#">Business studio</a><span class="toggleIcon">+</span></p>
+              <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </li>
+            <li>
+              <p class="accordion-toggle"><a href="http://edgeqld.org.au/">The Edge</a><span class="toggleIcon">+</span></p>
+              <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </li>
+            <li>
+              <p class="accordion-toggle"><a href="http://thecorner.slq.qld.gov.au/">The Corner</a><span class="toggleIcon">+</span></p>
+              <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </li>
+            <li>
+              <p class="accordion-toggle"><a href="http://designonline.org.au/">Design Online</a><span class="toggleIcon">+</span></p>
+              <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="links col-xs-12 col-sm-6 col-md-4">
+            <ul>
+                <li>
+                  <p class="accordion-toggle"><a href="plconnect.slq.qld.gov.au">Public Libraries Connect</a><span class="toggleIcon">+</span></p>
+                  <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </li>
+                <li>
+                  <p class="accordion-toggle"><a href="http://blogs.slq.qld.gov.au/">SLQ Blogs</a><span class="toggleIcon">+</span></p>
+                  <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </li>
+                <li>
+                  <p class="accordion-toggle"><a href="#">Read 4 Life</a><span class="toggleIcon">+</span></p>
+                  <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </li>
+                <li>
+                    <p class="accordion-toggle"><a href="http://www.summerreadingclub.org.au">Summer Reading Club</a><span class="toggleIcon">+</span></p>
+                  <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </li>
+                <li>
+                  <p class="accordion-toggle"><a href="http://first5forever.org.au">First 5 Forever</a><span class="toggleIcon">+</span></p>
+                  <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </li>
+              </ul>
+        </div>
+        <div class="links col-xs-12 col-sm-6 col-md-4">
+            <ul>
+                <li>
+                  <p class="accordion-toggle"><a href="http://www.shop.slq.qld.gov.au">Shop</a><span class="toggleIcon">+</span></p>
+                  <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </li>
+                <li>
+                  <p class="accordion-toggle"><a href="http://donations.slq.qld.gov.au">Support us</a><span class="toggleIcon">+</span></p>
+                  <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </li>
+                <li>
+                    <p class="accordion-toggle"><a href="#">Subscribe</a><span class="toggleIcon">+</span></p>
+                  <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </li>
+                <li>
+                    <p class="accordion-toggle"><a href="#">Join</a><span class="toggleIcon">+</span></p>
+                  <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </li>
+                <li>
+                    <p class="accordion-toggle"><a href="#">Creative Commons</a><span class="toggleIcon">+</span></p>
+                  <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </li>
+              </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="grid-item col-xs-12">
+      <div class="grid-content slq-footer"> 
+        <!-- <img src="img/footer.svg" />-->
+        <p>SLQ footer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+
+</div> <!-- end of container -->
+
+<script src="js/footer-main-min.js"></script>
+</body>
+</html>
