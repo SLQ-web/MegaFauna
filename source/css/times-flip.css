@@ -1,0 +1,83 @@
+/* CARD FLIP STYLES (INCLUDING IE FALLBACKS) */
+/* ////////////////////////////////// */
+
+/* ==== STYLES FOR OPENING TIMES PANEL ==== */
+
+.flip-timer-container {
+	perspective: 900px;
+	position: relative;
+	width: 100%;
+}
+
+#timerCard {
+	height: 100%;
+	position: absolute;
+	transform-origin: right center;
+	transform-style: preserve-3d;
+	transition: transform 0.4s;
+	width: 100%;
+}
+
+#timerCard.flipped {
+    transform: translateX( -100% ) rotateY( -180deg );
+}
+
+#timerCard div {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	display: block;
+	font-size: 1em;
+	position: absolute;
+	width: 100%;
+}
+
+#timerCard div h3 { line-height: 1; }
+#timerCard div p { font-weight: normal; }
+
+#timerCard .timerBack {
+	height: 285px;
+	transform: rotateY( 180deg );
+/*    z-index: 0;*/
+}
+
+#timerCard .timerFront {
+/*    z-index: 10;*/
+    background: #eee;
+}
+
+.timerFront, .timerBack{
+	height: 285px;
+    background: #ccc;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////// */
+
+/* CSS target for switching search panel behaviour (inc styles for onesearch panel) */
+#mainTimes, #otherTimes, #search-web, #search-lib {
+    cursor: pointer;
+    color: blue;
+}
+
+/* fallback behaviour for IE browsers that do not support 3D transform */
+.no-preserve3d #timerCard.flipped,
+.no-csstransforms3d #timerCard.flipped,
+.no-preserve3d #timerCard.flipped .timerBack,
+.no-csstransforms3d #timerCard.flipped .timerBack {
+    transform: none;
+}
+
+/* ensure the back card shows in IE8/9 when toggle clicked */
+.no-csstransforms3d #timerCard.flipped .timerBack {
+    display: block;
+}
+
+/* make the front car visible when page loads in IE8/9 */
+.no-csstransforms3d #timerCard .timerFront  {
+    display: block;
+}
+
+/* Swap out visiblity of front card so back card is visible in IE8/9 */
+.no-preserve3d #timerCard.flipped .timerFront,
+.no-csstransforms3d #timerCard.flipped .timerFront {
+    display: none;
+}

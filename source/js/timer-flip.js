@@ -38,7 +38,6 @@ var card = document.getElementById('timerCard');
 // Assign click action to flip card question
 document.getElementById('otherTimes').addEventListener( 'click', function(){
 card.toggleClassName('flipped');
-    alert('timer toggle');
 }, false);
 };
 
