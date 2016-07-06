@@ -136,6 +136,11 @@ $('.donations').progressBar({
       barColor : "black",
  });
 
+    //detect if browser is IE8 and display console message
+        if (navigator.userAgent.match(/MSIE 8/) !== null) {
+           alert('You are using Internet Explorer 8');
+        }
+
 // jQuery toggle for other sites buttons
 // RA 2016/06/10 changed the function so that clickable area is isolated and uses ASCCI toggle characters, not bg images
   $(document).ready(function($) {
@@ -150,11 +155,6 @@ $('.donations').progressBar({
             $(this).html("-");
         } else if (toggleState=="-") {
             $(this).html("+")
-        }
-
-    //detect if browser is IE8 and display console message
-        if (navigator.userAgent.match(/MSIE 8/) !== null) {
-           console.log('You are using Internet Explorer 8');
         }
 
       //Hide the other panels
