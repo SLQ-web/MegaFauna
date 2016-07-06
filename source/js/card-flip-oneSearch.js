@@ -1,7 +1,7 @@
 // ======================= DOM Utility Functions from PastryKit =============================== //
 // Source: https://desandro.github.io/3dtransforms/docs/card-flip.html //
 
-// Sure, we could use jQuery or XUI for these, 
+// Sure, we could use jQuery or XUI for these,
 // but these are concise and will work with plain vanilla JS
 
 Element.prototype.hasClassName = function (a) {
