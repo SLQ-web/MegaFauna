@@ -32,18 +32,24 @@ Element.prototype.toggleClassName = function (a) {
 
 // ======================= Card Flip =============================== //
 // Source: https://desandro.github.io/3dtransforms/docs/card-flip.html //
-var init = function() {
-var card = document.getElementById('timerCard');
+//var init = function() {
+var oneSearch = document.getElementById("onesearch");
 
-// Assign click action to flip card question
-document.getElementById('otherTimes').addEventListener( 'click', function(){
-card.toggleClassName('flipped');
-}, false);
-};
+// Assign click action to button on OneSearch panel
+//document.getElementById("search-lib").addEventListener( "click", function(){
+//    oneSearch.toggleClassName("flipped");
+//    }, false);
+document.getElementById("search-lib").onclick = function() {
+  oneSearch.toggleClassName("flipped");
+}
+//};
 
-//Addition of function to remove flipped class
-document.getElementById('mainTimes').addEventListener( 'click', function(){
-    $(" #timerCard ").removeClass("flipped")
-});
+//Addition of function to remove flipped class on OneSearch panel
+//document.getElementById("search-web").addEventListener( "click", function(){
+//    $(" #onesearch ").removeClass("flipped")
+//});
+document.getElementById("search-web").onclick = function() {
+  $(" #onesearch ").removeClass("flipped")
+}
 
-window.addEventListener('DOMContentLoaded', init, false);
+//window.addEventListener('DOMContentLoaded', init, false);
