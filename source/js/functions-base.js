@@ -152,6 +152,11 @@ $('.donations').progressBar({
             $(this).html("+")
         }
 
+    //detect if browser is IE8 and display console message
+        if (navigator.userAgent.match(/MSIE 8/) !== null) {
+           console.log('You are using Internet Explorer 8');
+        }
+
       //Hide the other panels
       $(".accordion-content").not($(this.parentNode).next()).slideUp('fast');
 
