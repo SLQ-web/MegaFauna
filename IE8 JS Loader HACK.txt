@@ -1,3 +1,8 @@
+//Use this script to load external JS scripts for IE8 only.
+//This is a sniffer script that detects an IE8 browser and loads a specific IE8 combined script
+//If it is not an IE8 browser, it loads another script.
+//Not sure if this method allows the caching of the JS file - I highly doubt it.
+
 <script type="text/javascript">
     //detect if browser is IE8 and display console message
         if (navigator.userAgent.match(/MSIE 8/) !== null) {
