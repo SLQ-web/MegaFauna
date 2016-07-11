@@ -1,8 +1,8 @@
 # MegaFauna
-Repo for initial mockup design for Packery inspired homepage. This Repo will contain short notes and documentation about the elements that makeup the beta SLQ packery homepage.
+Repo for initial mockup design for Packery inspired homepage. Below is a list of dependencies within the project.
 
 **External JS library dependencies**
-- jQuery 1.9.1 (using older version for supporting legacy browsers)
+- jQuery 1.9.1 (https://code.jquery.com) - using older version for supporting legacy browsers
 - jQuery Easing 1.3 (http://gsgd.co.uk/sandbox/jquery/easing/) for easing jQuery animation
 - Packery 1.4.3 (http://packery.metafizzy.co) - Older version that supports IE8/9
 - Flickity v1.1.1 (http://flickity.metafizzy.co/)
