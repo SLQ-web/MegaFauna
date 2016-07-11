@@ -147,8 +147,8 @@ $('.donations').progressBar({
     // console.log(excerpt);
     // console.log(content);
 
-    var srcWithQuotes = content.match(/src\=([^\s]*)\s/)[1];
-    var imgsrc = srcWithQuotes.substring(1,srcWithQuotes.length - 1);
+    var srcWithQuotes = content.match(/src\=([^\s]*)\s/)[0];
+    var imgsrc = srcWithQuotes.substring(0,srcWithQuotes.length - 1);
     // console.log(imgsrc);
 
 $( '#wp-post-image' ).css('background-image', 'url(' + imgsrc + ')');
