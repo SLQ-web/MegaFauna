@@ -1,11 +1,25 @@
-/* BLOG FEED PANEL STYLES */
+/* BLOG JSON FEED PANEL STYLES */
 /* ////////////////////////////////// */
 
-.soldierPortrait { 
-	background-image:  url(../img/blogs/demo-lindeman.jpg); 
-	background-size: cover; 
-	background-position: bottom;
-	color:#FFF000;
-	text-shadow:1px 1px 0 rgba(0,0,0,0.2);
-	padding:15px;
+#json-feed {
+    position: relative;
+    background: purple;
+}
+#wp-post-image {
+    width: 100%;
+    background-size: cover;
+    height: 285px;
+    position: absolute;
+    z-index: 5;
+    opacity: 0.3;
+}
+#wp-post-content {
+    z-index: 10;
+    color: white;
+    opacity: 1;
+    padding: 0px 10px;
+    position: relative;
+}
+#wp-post-content a {
+    color: white;
 }

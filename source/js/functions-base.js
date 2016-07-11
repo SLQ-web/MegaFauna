@@ -136,6 +136,7 @@ $('.donations').progressBar({
       barColor : "black",
  });
 
+
 // jQuery toggle for other sites buttons
 // RA 2016/06/10 changed the function so that clickable area is isolated and uses ASCCI toggle characters, not bg images
   $(document).ready(function($) {

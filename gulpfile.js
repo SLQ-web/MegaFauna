@@ -1,9 +1,9 @@
-var gulp = require('gulp');
-var gutil = require('gulp-util');
-var uglify = require('gulp-uglify');
-var cssnano = require('gulp-cssnano');
-var gulpIf = require('gulp-if');
-var useref = require('gulp-useref');
+var gulp = require('gulp'),
+    gutil = require('gulp-util'),
+    uglify = require('gulp-uglify'),
+    cssnano = require('gulp-cssnano'),
+    gulpIf = require('gulp-if'),
+    useref = require('gulp-useref');
 
 // Gulp watch syntax (watching for changes to CSS/JS files)
 gulp.task('watch', function(){
