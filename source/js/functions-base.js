@@ -136,23 +136,6 @@ $('.donations').progressBar({
       barColor : "black",
  });
 
-//JSON Data Source for retrieving SLQ Blogs Data
-   var link = "%ds__link%";
-   var excerpt = '%ds__excerpt%';
-   var content = ('%ds__content%');
-   var author = "%ds__author%";
-
-    // console.log(link);
-    // console.log(author);
-    // console.log(excerpt);
-    // console.log(content);
-
-    var srcWithQuotes = content.match(/src\=([^\s]*)\s/)[0];
-    var imgsrc = srcWithQuotes.substring(0,srcWithQuotes.length - 1);
-    // console.log(imgsrc);
-
-$( '#wp-post-image' ).css('background-image', 'url(' + imgsrc + ')');
-
 
 // jQuery toggle for other sites buttons
 // RA 2016/06/10 changed the function so that clickable area is isolated and uses ASCCI toggle characters, not bg images
