@@ -53,6 +53,7 @@ h3{font-size:200%}
 .aRight { float: right; }
 .tile-title-icon {
     width: 30px;
+    height: 30px;
     margin-right: 10px;
 }
 

@@ -31,7 +31,10 @@
 	width: 100%;
 }
 
-#card div h3, #timerCard div h3 { line-height: 1; }
+#card div h3, #timerCard div h3 {
+    line-height: 1;
+    display: inline-block;
+}
 #card div p, #timerCard div p { font-weight: normal; }
 
 #card .back, #timerCard .timerBack {
