@@ -39,7 +39,7 @@
 .text-md { font-size: 1.3rem; }
 .text-lge { font-size: 2rem; }
 
-h3 { margin-bottom: 1rem; }
+h3 { margin-bottom: 1rem; margin-top:0; }
 a:link, a:visited { color: navy; }
 
 /*CE this is lame*/
@@ -53,6 +53,7 @@ h3{font-size:200%}
 .aRight { float: right; }
 .tile-title-icon {
     width: 30px;
+    height: 30px;
     margin-right: 10px;
 }
 
