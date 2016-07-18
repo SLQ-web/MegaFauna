@@ -4,3 +4,17 @@ form.oneSearch input[type=text] {
 form.oneSearch select {
     width: 20%;
 }
+
+#onesearch .back-search {
+	height: 285px;
+    padding: 10px;
+    background: #C7FFF9;
+	transform: rotateX( 180deg );
+/*    z-index: 0;*/
+}
+#onesearch .front-search {
+    height: 285px;
+    background:#FFF8B9;
+    padding: 10px;
+/*    z-index: 10;*/
+}
