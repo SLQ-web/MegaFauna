@@ -2,33 +2,6 @@
 /* Combine all custom homepage CSS */
 /* ======================================= */
 
-/* FOOTER AND HEADER STUFF */
-/* ////////////////////////////////// */
-
-.slq-header {
-    background-image: url(../img/Prototype%20header.svg);
-    min-height: 190px;
-    background-size: cover;
-    width: 100%;
-}
-.slq-logo {
-    display: inline-block;
-    float: left;
-    margin-left: -40px; /*offset the slq logo so its out of the page flow*/
-    margin-top:5px;
-}
-.slq-logo img {
-    width:35px;
-}
-.slq-footer {
-    min-height: 250px;
-    width: 100%;
-    background: #333;
-    padding-top: 0;
-    color: #333;
-}
-.slq-footer img { width: 100%; }
-
 
 /* TYPOGRAPHY STYLES */
 /* ////////////////////////////////// */
