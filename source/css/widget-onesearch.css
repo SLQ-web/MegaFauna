@@ -18,3 +18,10 @@ form.oneSearch select {
     padding: 10px;
 /*    z-index: 10;*/
 }
+
+#onesearch .front-search input{
+	width:50%;
+	height:50px;
+	border:solid 5px #000
+}
+
