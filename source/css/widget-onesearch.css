@@ -19,9 +19,22 @@ form.oneSearch select {
 /*    z-index: 10;*/
 }
 
-#onesearch .front-search input{
-	width:50%;
+#onesearch .front-search input, #onesearch .front-search select, #onesearch .front-search button{
 	height:50px;
-	border:solid 5px #000
+	border:solid 4px #000;
+	background-color: #fff;
+	border-radius:0;
+	font-size:12pt;
+	font-weight:500;
+	margin-right:2px;
 }
 
+#onesearch .front-search input{
+	width:50%;
+}
+	
+#onesearch .front-search select{
+	width: 30%;
+	-webkit-appearance: none;
+	padding:0 1em;
+}
