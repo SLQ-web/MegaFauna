@@ -110,12 +110,12 @@ var pckry = new Packery( elem, {
 // Instagram feed is currently connected to and referencing Coolwebs Instagram account (ownder is RA)
 var feed = new Instafeed({
     get: 'user',
-    userId: '249842490',
-    accessToken: '249842490.1677ed0.0283e662751a4e369ae856f60a4b6228',
+    userId: '2094842558',
+    accessToken: '2094842558.1677ed0.d3e45184235a4154866d053407d87571',
     sortBy: 'most-recent',
     resolution: 'low_resolution',
     limit: 1,
-    clientId: 'dee7958de6a64ed284b95abb1619b790',
+    clientId: '092277589b9b4837a1f960ed38c9e7bc',
     template: '<div class="insta-image" style="background-image: url({{image}});background-size: cover;height:285px;"><div class="social-buttons"> <table> <tr> <td><a href="https://twitter.com/slqld"><img src="'+jsFileLocation+'img/social/iconmonstr-twitter-4-icon.svg" class="social-icon" alt="Twitter" /></a></td><td><a href="https://www.facebook.com/statelibraryqld/"><img src="'+jsFileLocation+'img/social/iconmonstr-facebook-4-icon.svg" class="social-icon" alt="Facebook" /></a></td><td><a href="https://www.instagram.com/statelibraryqld/"><img src="'+jsFileLocation+'img/social/iconmonstr-instagram-9-icon.svg" class="social-icon active-social-data" alt="Instagram" /></a></td></tr><tr> <td><a href="https://au.pinterest.com/SLQShop/"><img src="'+jsFileLocation+'img/social/iconmonstr-pinterest-1.svg" class="social-icon" alt="Pinterest" /></a></td><td><a href="https://vimeo.com/statelibraryqld"><img src="'+jsFileLocation+'img/social/iconmonstr-vimeo-4-icon.svg" class="social-icon" alt="Vimeo" /></a></td><td><a href="https://www.youtube.com/user/statelibraryqld"><img src="'+jsFileLocation+'img/social/iconmonstr-youtube-4-icon.svg" class="social-icon" alt="YouTube" /></a></td></tr><tr> <td><img src="'+jsFileLocation+'img/social/iconmonstr-map-icon.svg" class="social-icon" alt="" /></td><td><img src="'+jsFileLocation+'img/social/iconmonstr-layer-6-icon.svg" class="social-icon" alt="" /></td><td><img src="'+jsFileLocation+'img/social/iconmonstr-light-bulb-3-icon.svg" class="social-icon" alt="" /></td></tr></table> </div></div>'
     //make this content above into a JS variable. Looks real nasty inserted straight into the function.
 });
