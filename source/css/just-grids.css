@@ -8,9 +8,6 @@
 /* force scroll bar */
 html { overflow-y: scroll; }
 
-body { margin:0;padding:0;}
-.content { width: 960px; }
-
 /* ---- grid ---- */
 
 .grid {
@@ -29,10 +26,6 @@ body { margin:0;padding:0;}
 }
 
 /* ---- .grid-item ---- */
-
-.stamp {  border-color: aquamarine; }
-.stamp1 { left: 0%; top: 0; }
-.stamp2 { right: 0%; top: 200; }
 
 .grid-item {
   float: left;

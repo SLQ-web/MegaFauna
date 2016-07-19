@@ -1,5 +1,4 @@
 function ShowTime() {
-
 	//access system clock and get the time
 	var aest = new Date();
 	var localTime = aest.getTime();
