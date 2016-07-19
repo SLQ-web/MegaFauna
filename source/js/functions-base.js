@@ -112,7 +112,7 @@ var pckry = new Packery( elem, {
 var feed = new Instafeed({
     get: 'user',
     userId: '2094842558',
-//    accessToken: '249842490.1677ed0.0283e662751a4e369ae856f60a4b6228',
+    accessToken: '2094842558.1677ed0.d3e45184235a4154866d053407d87571',
     sortBy: 'most-recent',
     resolution: 'low_resolution',
     limit: 1,
