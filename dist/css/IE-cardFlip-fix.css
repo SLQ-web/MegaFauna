@@ -1,8 +1,5 @@
 /* CARD FLIP FIXES FOR IE8 - IE9 */
 /* ////////////////////////////////// */
 
-#card .back, #timerCard .timerBack { z-index: 0; }
-#card .front { z-index: 10; }
-#timerCard .timerFront { z-index: 10; }
-#onesearch .back-search { z-index: 0; }
-#onesearch .front-search { z-index: 10; }
+#homepage-flipcard .back, #homepage-openingHours .timerBack, #onesearch .back-search { z-index: 0; }
+#homepage-flipcard .front, #homepage-openingHours .timerFront, #onesearch .front-search { z-index: 10; }
