@@ -9,7 +9,7 @@
 	width: 100%;
 }
 
-#card, #timerCard {
+#homepage-flipcard, #homepage-openingHours {
 	height: 100%;
 	position: absolute;
 	transform-origin: right center;
@@ -18,11 +18,11 @@
 	width: 100%;
 }
 
-#card.flipped, #timerCard.flipped {
+#homepage-flipcard.flipped, #homepage-openingHours.flipped {
     transform: translateX( -100% ) rotateY( -180deg );
 }
 
-#card div, #timerCard div, #onesearch div {
+#homepage-flipcard div, #homepage-openingHours div, #onesearch div {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	display: block;
@@ -31,19 +31,19 @@
 	width: 100%;
 }
 
-#card div h3, #timerCard div h3 {
+#homepage-flipcard div h3, #homepage-openingHours div h3 {
     line-height: 1;
     display: inline-block;
 }
-#card div p, #timerCard div p { font-weight: normal; }
+#homepage-flipcard div p, #homepage-openingHours div p { font-weight: normal; }
 
-#card .back, #timerCard .timerBack {
+#homepage-flipcard .back, #homepage-openingHours .timerBack {
 	height: 285px;
 	transform: rotateY( 180deg );
 /*    z-index: 0;*/
 }
 
-#card .front {
+#homepage-flipcard .front {
 /*    z-index: 10;*/
 }
 
@@ -70,13 +70,13 @@
 	background-position:30px 90px;
 }
 
-#info {
+#homepage-flipcard-flip {
 	padding:0;
 	margin:2em 0 0 0;
     cursor: pointer;
 }
 
-#resolveInfo {
+#homepage-flipcard-unflip {
 	padding:0;
 	margin:4em 0 0 0;
     cursor: pointer;
@@ -84,7 +84,7 @@
 
 /* === STYLES FOR TIMER PANEL === */
 
-#timerCard .timerFront {
+#homepage-openingHours .timerFront {
 /*    z-index: 10;*/
     background: #eee;
 }
@@ -120,47 +120,47 @@
 /* ///////////////////////////////////////////////////////////////////////////// */
 
 /* CSS target for switching search panel behaviour */
-#mainTimes, #otherTimes, #search-web, #search-lib {
+#homepage-openingHours-unflip, #homepage-openingHours-flip, #search-web, #search-lib {
     cursor: pointer;
     color: blue;
 }
 
 /* fallback behaviour for IE browsers that do not support 3D transform */
-.no-preserve3d #card.flipped,
-.no-csstransforms3d #card.flipped,
-.no-preserve3d #card.flipped .back,
-.no-csstransforms3d #card.flipped .back,
+.no-preserve3d #homepage-flipcard.flipped,
+.no-csstransforms3d #homepage-flipcard.flipped,
+.no-preserve3d #homepage-flipcard.flipped .back,
+.no-csstransforms3d #homepage-flipcard.flipped .back,
 .no-preserve3d #onesearch.flipped,
 .no-csstransforms3d #onesearch.flipped,
 .no-preserve3d #onesearch.flipped .back-search,
 .no-csstransforms3d #onesearch.flipped .back-search,
-.no-preserve3d #timerCard.flipped,
-.no-csstransforms3d #timerCard.flipped,
-.no-preserve3d #timerCard.flipped .timerBack,
-.no-csstransforms3d #timerCard.flipped .timerBack {
+.no-preserve3d #homepage-openingHours.flipped,
+.no-csstransforms3d #homepage-openingHours.flipped,
+.no-preserve3d #homepage-openingHours.flipped .timerBack,
+.no-csstransforms3d #homepage-openingHours.flipped .timerBack {
     transform: none;
 }
 
 /* ensure the back card shows in IE8/9 when toggle clicked */
-.no-csstransforms3d #card.flipped .back,
+.no-csstransforms3d #homepage-flipcard.flipped .back,
 .no-csstransforms3d #onesearch.flipped .back-search,
-.no-csstransforms3d #timerCard.flipped .timerBack {
+.no-csstransforms3d #homepage-openingHours.flipped .timerBack {
     display: block;
 }
 
 /* make the front car visible when page loads in IE8/9 */
-.no-csstransforms3d #card .front,
+.no-csstransforms3d #homepage-flipcard .front,
 .no-csstransforms3d #onesearch .front-search,
-.no-csstransforms3d #timerCard .timerFront  {
+.no-csstransforms3d #homepage-openingHours .timerFront  {
     display: block;
 }
 
 /* Swap out visiblity of front card so back card is visible in IE8/9 */
-.no-preserve3d #card.flipped .front,
-.no-csstransforms3d #card.flipped .front,
+.no-preserve3d #homepage-flipcard.flipped .front,
+.no-csstransforms3d #homepage-flipcard.flipped .front,
 .no-preserve3d #onesearch.flipped .front-search,
 .no-csstransforms3d #onesearch.flipped .front-search,
-.no-preserve3d #timerCard.flipped .timerFront,
-.no-csstransforms3d #timerCard.flipped .timerFront {
+.no-preserve3d #homepage-openingHours.flipped .timerFront,
+.no-csstransforms3d #homepage-openingHours.flipped .timerFront {
     display: none;
 }

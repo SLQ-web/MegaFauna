@@ -36,11 +36,11 @@ function ShowTime() {
 	var timeLeft = "<strong>The SLQ building is currently closed.</strong>";
         //currently set the first if/else statement to trigger after 12pm for testing. SVG line doesn't want to repeat-x when using inline.
     } else if (brisHours<3 || brisHours>hoursBefore) {
-        var timeLeft = "SLQ will be open for another<br /><strong style='background-image:url("+jsFileLocation+"img/wavy-underline2.svg);background-repeat:repeat-x;background-position:left 15px;background-size:10px 13px'>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> today";
+        var timeLeft = "SLQ will be open for another<br /><strong style='background-image:url("+jsFileLocation+"img/wigglylines-defcon-5.svg);background-repeat:repeat-x;background-position:left 15px;background-size:10px 13px'>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> today";
     } else if (brisHours<2 || brisHours>hoursBefore) {
-        var timeLeft = "SLQ will be open for another<br /><strong style='background-image:url("+jsFileLocation+"img/wavy-underline3.svg);background-repeat:repeat-x;background-position:left 15px;background-size:10px 13px'>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> today";
+        var timeLeft = "SLQ will be open for another<br /><strong style='background-image:url("+jsFileLocation+"img/wigglylines-defcon-4.svg);background-repeat:repeat-x;background-position:left 15px;background-size:10px 13px'>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> today";
     } else if (brisHours<1 || brisHours>hoursBefore) {
-        var timeLeft = "SLQ will be open for another<br /><strong style='background-image:url("+jsFileLocation+"img/wavy-underline4.svg);background-repeat:repeat-x;background-position:left bottom'>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> today";
+        var timeLeft = "SLQ will be open for another<br /><strong style='background-image:url("+jsFileLocation+"img/wigglylines-defcon-5.svg);background-repeat:repeat-x;background-position:left bottom'>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> today";
 	}
         else {
 	var timeLeft = "SLQ will be open for another<br /><strong>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> today";
@@ -51,7 +51,7 @@ function ShowTime() {
     document.getElementById("countdown").innerHTML = timeLeft;
 }
 
-//Setup variable to update on setInterval function every 1000 ticks
+//Setup variable to update on setInterval function every 1000 milliseconds
 var countdown = setInterval(ShowTime ,1000);
 
 // initialise the flickity sliders with jQuery
@@ -65,31 +65,20 @@ $('.main-gallery').flickity({
   wrapAround: true
 });
 
-    // initialise the page in packery layout with jQuery
-//    var $grid = $('.grid').packery({
-//      itemSelector: '.grid-item',
-//      gutter: 0,
-//      columnWidth: 0,
-//      rowHeight: 0,
-//      isOriginTop: true,
-//      isHorizontal: false,
-//      percentPosition: true,
-//      stamp: '.stamp',
-//    })
     
 // initialise the page in packery layout with vanilla js
-var elem = document.querySelector('.grid');
-var pckry = new Packery( elem, {
-  // options
-  itemSelector: '.grid-item',
-  gutter: 0,
-  columnWidth: 0,
-  rowHeight: 0,
-  isOriginTop: true,
-  isHorizontal: false,
-  percentPosition: true,
-  stamp: '.stamp',
-});
+//var elem = document.querySelector('.grid');
+//var pckry = new Packery( elem, {
+//  // options
+//  itemSelector: '.grid-item',
+//  gutter: 0,
+//  columnWidth: 0,
+//  rowHeight: 0,
+//  isOriginTop: true,
+//  isHorizontal: false,
+//  percentPosition: true,
+//  stamp: '.stamp',
+//});
         
 // initialise Packery Dragabillity (allow panels to be repositioned within flow)
 //        $grid.find('.grid-item').each( function( i, itemElem ) {
@@ -116,7 +105,7 @@ var feed = new Instafeed({
     resolution: 'low_resolution',
     limit: 1,
     clientId: '092277589b9b4837a1f960ed38c9e7bc',
-    template: '<div class="insta-image" style="background-image: url({{image}});background-size: cover;height:285px;"><div class="social-buttons"> <table> <tr> <td><a href="https://twitter.com/slqld"><img src="'+jsFileLocation+'img/social/iconmonstr-twitter-4-icon.svg" class="social-icon" alt="Twitter" /></a></td><td><a href="https://www.facebook.com/statelibraryqld/"><img src="'+jsFileLocation+'img/social/iconmonstr-facebook-4-icon.svg" class="social-icon" alt="Facebook" /></a></td><td><a href="https://www.instagram.com/statelibraryqld/"><img src="'+jsFileLocation+'img/social/iconmonstr-instagram-9-icon.svg" class="social-icon active-social-data" alt="Instagram" /></a></td></tr><tr> <td><a href="https://au.pinterest.com/SLQShop/"><img src="'+jsFileLocation+'img/social/iconmonstr-pinterest-1.svg" class="social-icon" alt="Pinterest" /></a></td><td><a href="https://vimeo.com/statelibraryqld"><img src="'+jsFileLocation+'img/social/iconmonstr-vimeo-4-icon.svg" class="social-icon" alt="Vimeo" /></a></td><td><a href="https://www.youtube.com/user/statelibraryqld"><img src="'+jsFileLocation+'img/social/iconmonstr-youtube-4-icon.svg" class="social-icon" alt="YouTube" /></a></td></tr><tr> <td><img src="'+jsFileLocation+'img/social/iconmonstr-map-icon.svg" class="social-icon" alt="" /></td><td><img src="'+jsFileLocation+'img/social/iconmonstr-layer-6-icon.svg" class="social-icon" alt="" /></td><td><img src="'+jsFileLocation+'img/social/iconmonstr-light-bulb-3-icon.svg" class="social-icon" alt="" /></td></tr></table> </div></div>'
+    template: '<div class="insta-image" style="background-image: url({{image}});background-size: cover;height:285px;"><div class="social-buttons" id="homepage-social"> <table> <tr> <td><a href="https://twitter.com/slqld" id="homepage-social-twitter"><img src="'+jsFileLocation+'img/social/iconmonstr-twitter-4-icon.svg" class="social-icon" alt="Twitter" /></a></td><td><a href="https://www.facebook.com/statelibraryqld/" id="homepage-social-facebook"><img src="'+jsFileLocation+'img/social/iconmonstr-facebook-4-icon.svg" class="social-icon" alt="Facebook" /></a></td><td><a href="https://www.instagram.com/statelibraryqld/" id="homepage-social-instagram"><img src="'+jsFileLocation+'img/social/iconmonstr-instagram-9-icon.svg" class="social-icon active-social-data" alt="Instagram" /></a></td></tr><tr> <td><a href="https://au.pinterest.com/SLQShop/"><img src="'+jsFileLocation+'img/social/iconmonstr-pinterest-1.svg" class="social-icon" alt="Pinterest" /></a></td><td><a href="https://vimeo.com/statelibraryqld" id="homepage-social-vimeo"><img src="'+jsFileLocation+'img/social/iconmonstr-vimeo-4-icon.svg" class="social-icon" alt="Vimeo" /></a></td><td><a href="https://www.youtube.com/user/statelibraryqld" id="homepage-social-youtube"><img src="'+jsFileLocation+'img/social/iconmonstr-youtube-4-icon.svg" class="social-icon" alt="YouTube" /></a></td></tr><tr> <td><img src="'+jsFileLocation+'img/social/iconmonstr-map-icon.svg" class="social-icon" alt="" /></td><td><img src="'+jsFileLocation+'img/social/iconmonstr-layer-6-icon.svg" class="social-icon" alt="" /></td><td><img src="'+jsFileLocation+'img/social/iconmonstr-light-bulb-3-icon.svg" class="social-icon" alt="" /></td></tr></table> </div></div>'
     //make this content above into a JS variable. Looks real nasty inserted straight into the function.
 });
 feed.run();

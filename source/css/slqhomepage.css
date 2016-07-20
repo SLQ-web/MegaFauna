@@ -29,10 +29,3 @@ h3{font-size:200%}
     height: 30px;
     margin-right: 10px;
 }
-
-#info, #resolveInfo, #slide1-info, #resolve-slide1 {
-    text-align: right;
-    cursor: pointer;
-}
-
-img.clock { }
