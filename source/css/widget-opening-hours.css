@@ -7,24 +7,3 @@
     padding-bottom: 15px; 
     background-size: 15px 20px;
 }
-
-#countdown1 strong .one {
-    color: #4f94e2;
-    background: url(../img/wigglylines-defcon-3.svg) repeat-x left bottom;
-    padding-bottom: 15px;
-    background-size: 15px 20px;
-}
-
-#countdown2 strong .two {
-    color: #4f94e2;
-    background: url(../img/wigglylines-defcon-4.svg) repeat-x left bottom;
-    padding-bottom: 15px;
-    background-size: 15px 20px;
-}
-
-#countdown3 strong .three {
-    color: #4f94e2;
-    background: url(../img/wigglylines-defcon-5.svg) repeat-x left bottom;
-    padding-bottom: 15px;
-    background-size: 15px 20px;
-}
