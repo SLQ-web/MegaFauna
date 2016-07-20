@@ -51,7 +51,7 @@ function ShowTime() {
     document.getElementById("countdown").innerHTML = timeLeft;
 }
 
-//Setup variable to update on setInterval function every 1000 ticks
+//Setup variable to update on setInterval function every 1000 milliseconds
 var countdown = setInterval(ShowTime ,1000);
 
 // initialise the flickity sliders with jQuery
