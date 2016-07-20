@@ -36,11 +36,11 @@ function ShowTime() {
 	var timeLeft = "<strong>The SLQ building is currently closed.</strong>";
         //currently set the first if/else statement to trigger after 12pm for testing. SVG line doesn't want to repeat-x when using inline.
     } else if (brisHours<3 || brisHours>hoursBefore) {
-        var timeLeft = "SLQ will be open for another<br /><strong style='background-image:url("+jsFileLocation+"img/wigglylines__defcon 1.svg);background-repeat:repeat-x;background-position:left 15px;background-size:10px 13px'>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> today";
+        var timeLeft = "SLQ will be open for another<br /><strong style='background-image:url("+jsFileLocation+"img/wigglylines-defcon-3.svg);background-repeat:repeat-x;background-position:left 15px;background-size:10px 13px'>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> today";
     } else if (brisHours<2 || brisHours>hoursBefore) {
-        var timeLeft = "SLQ will be open for another<br /><strong style='background-image:url("+jsFileLocation+"img/wigglylines__defcon 3.svg);background-repeat:repeat-x;background-position:left 15px;background-size:10px 13px'>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> today";
+        var timeLeft = "SLQ will be open for another<br /><strong style='background-image:url("+jsFileLocation+"img/wigglylines-defcon-4.svg);background-repeat:repeat-x;background-position:left 15px;background-size:10px 13px'>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> today";
     } else if (brisHours<1 || brisHours>hoursBefore) {
-        var timeLeft = "SLQ will be open for another<br /><strong style='background-image:url("+jsFileLocation+"img/wigglylines__defcon 6.svg);background-repeat:repeat-x;background-position:left bottom'>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> today";
+        var timeLeft = "SLQ will be open for another<br /><strong style='background-image:url("+jsFileLocation+"img/wigglylines-defcon-5.svg);background-repeat:repeat-x;background-position:left bottom'>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> today";
 	}
         else {
 	var timeLeft = "SLQ will be open for another<br /><strong>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> today";
