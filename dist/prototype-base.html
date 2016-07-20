@@ -76,7 +76,7 @@
   <div class="grid"> <!-- start of the packery grid -->
     <div class="grid-item col-xs-12 col-sm-6 col-md-8">
       <div class="grid-content">
-        <div id="whatsOn">
+        <div id="homepage-whatsOn">
           <div class="main-gallery">
             <div class="gallery-cell">
               <div id="sow">
@@ -132,7 +132,7 @@
     <div class="grid-item col-xs-12 col-sm-6 col-md-4">
       <div class="grid-content">
         <div class="flip-container">
-          <div id="timerCard">
+          <div id="homepage-openingHours">
             <div class="timerFront">
 
                 <svg class="clock tile-title-icon" >
@@ -142,7 +142,7 @@
               <p class="text-lge">Mon-Thu <strong>10am - 8pm</strong><br />
               Fri-Sun <strong>10am - 5pm</strong></p>
               <p id="countdown"></p>
-              <p id="otherTimes">Special areas &amp; public holidays</p>
+              <p id="homepage-openingHours-flip">Special areas &amp; public holidays</p>
             </div>
             <div class="timerBack">
                 <p><strong>Infozone (Level 1)</strong><br />
@@ -153,7 +153,7 @@
                 Open daily 10am&ndash;3pm. Including weekends, school and public holidays</p>
                 <p><strong>The Edge</strong><br />
                 Open Tue &ndash; Sat 12–8pm, Sun 12–6pm</p>
-                <p id="mainTimes">Click to turn back</p>
+                <p id="homepage-openingHours-unflip">Click to turn back</p>
             </div>
          </div>
       </div>
@@ -226,17 +226,17 @@
     <div class="grid-item col-xs-12 col-sm-6 col-md-4">
       <div class="grid-content social">
           <div id="instafeed">
-            <div class="instafallback">
+            <div class="instafallback" id="homepage-social">
                 <table>
                   <tr>
-                    <td><a href="https://twitter.com/slqld"><img src="img/social/iconmonstr-twitter-4-icon.png" class="social-icon" alt="Twitter" /></a></td>
-                    <td><a href="https://www.facebook.com/statelibraryqld/"><img src="img/social/iconmonstr-facebook-4-icon.png" class="social-icon" alt="Facebook" /></a></td>
-                    <td><a href="https://www.instagram.com/statelibraryqld/"><img src="img/social/iconmonstr-instagram-9-icon.png" class="social-icon active-social-data" alt="Instagram" /></a></td>
+                    <td><a href="https://twitter.com/slqld" id="homepage-social-twitter"><img src="img/social/iconmonstr-twitter-4-icon.png" class="social-icon" alt="Twitter" /></a></td>
+                    <td><a href="https://www.facebook.com/statelibraryqld/" id="homepage-social-facebook"><img src="img/social/iconmonstr-facebook-4-icon.png" class="social-icon" alt="Facebook" /></a></td>
+                    <td><a href="https://www.instagram.com/statelibraryqld/" id="homepage-social-instagram"><img src="img/social/iconmonstr-instagram-9-icon.png" class="social-icon active-social-data" alt="Instagram" /></a></td>
                   </tr>
                   <tr>
                     <td><a href="https://au.pinterest.com/SLQShop/"><img src="img/social/iconmonstr-pinterest-1.png" class="social-icon" alt="Pinterest" /></a></td>
-                    <td><a href="https://vimeo.com/statelibraryqld"><img src="img/social/iconmonstr-vimeo-4-icon.png" class="social-icon" alt="Vimeo" /></a></td>
-                    <td><a href="https://www.youtube.com/user/statelibraryqld"><img src="img/social/iconmonstr-youtube-4-icon.png" class="social-icon" alt="YouTube" /></a></td>
+                    <td><a href="https://vimeo.com/statelibraryqld" id="homepage-social-vimeo"><img src="img/social/iconmonstr-vimeo-4-icon.png" class="social-icon" alt="Vimeo" /></a></td>
+                    <td><a href="https://www.youtube.com/user/statelibraryqld" id="homepage-social-youtube"><img src="img/social/iconmonstr-youtube-4-icon.png" class="social-icon" alt="YouTube" /></a></td>
                   </tr>
                   <tr>
                     <td><img src="img/social/iconmonstr-map-icon.png" class="social-icon" /></td>
@@ -302,11 +302,11 @@
     <div class="grid-item col-xs-12 col-sm-6 col-md-4">
         <div class="grid-content">
           <div class="flip-container">
-            <div id="card">
+            <div id="homepage-flipcard">
               <div class="front" style="">
                 <h3>What is the oldest item in SLQ's collections?</h3>
                 <!--[if gte IE 9]><!-->
-                <svg id="info" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#fff" viewBox="0 0 24 24">
+                <svg id="homepage-flipcard-flip" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#fff" viewBox="0 0 24 24">
                   <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 18.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25c.691 0 1.25.56 1.25 1.25s-.559 1.25-1.25 1.25zm1.961-5.928c-.904.975-.947 1.514-.935 2.178h-2.005c-.007-1.475.02-2.125 1.431-3.468.573-.544 1.025-.975.962-1.821-.058-.805-.73-1.226-1.365-1.226-.709 0-1.538.527-1.538 2.013h-2.01c0-2.4 1.409-3.95 3.59-3.95 1.036 0 1.942.339 2.55.955.57.578.865 1.372.854 2.298-.016 1.383-.857 2.291-1.534 3.021z"/>
                 </svg>
                 <!--<![endif]-->
@@ -315,9 +315,9 @@
                 <![endif]-->
               </div>
               <div class="back" style="">
-                <p>Our oldest collection item is a <b><a href="http://onesearch.slq.qld.gov.au/SLQ:SLQ_PCI_EBSCO:slq_alma21127022090002061" target="_blank" title="View One Search catalogue record for this item">cuneiform tablet</a></b> from ancient Iraq, dating to about 1850 B.C.</p>
+                <p>Our oldest collection item is a <b><a href="http://onesearch.slq.qld.gov.au/SLQ:SLQ_PCI_EBSCO:slq_alma21127022090002061" target="_blank" title="View One Search catalogue record for this item" id="homepage-flipcard-moreInfo">cuneiform tablet</a></b> from ancient Iraq, dating to about 1850 B.C.</p>
                 <!--[if gte IE 9]><!-->
-                <svg id="resolveInfo" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#fff" viewBox="0 0 24 24">
+                <svg id="homepage-flipcard-unflip" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#fff" viewBox="0 0 24 24">
                   <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.222 18.917c5.666-5.905-.629-10.828-5.011-7.706l1.789 1.789h-6v-6l1.832 1.832c7.846-6.07 16.212 4.479 7.39 10.085z"/>
                 </svg>
                 <!--<![endif]-->
@@ -331,12 +331,13 @@
     </div>
     
     <div class="grid-item col-xs-12 col-sm-6 col-md-4">
-      <div class="grid-content">
+      <div class="grid-content" id="homepage-chart">
         <h3>QLF campaign</h3>
         <ul class="progressBar">
           <li class='donations' data-width='60' data-target='100'>Funding</li>
         </ul>
         <p>All donations received by QLF between 2 February and 29 May 2016 to support SLQ will be matched by Creative Partnerships Australia once the total fundraising target is achieved.</p>
+        <p><a href="#" id="homepage-chart-moreinfo">Read more...</a></p>
       </div>
     </div>
     
@@ -347,7 +348,7 @@
     </div>
     
     <div class="grid-item col-xs-12 col-sm-6 col-md-4">
-      <div class="grid-content">
+      <div class="grid-content" id="homepage-html">
         <h3>kuril dhagun</h3>
         <p>Located on Level 1 of our South Bank building, kuril dhagun is an indigenous space.</p>
         <ul>
@@ -355,7 +356,7 @@
           <li><a href="#">Possum skin cloak workshops</a></li>
           <li><a href="#">Talking circle</a></li>
         </ul>
-        <p class="aRight"><a href="#">Read more...</a></p>
+        <p class="aRight"><a href="#" id="homepage-html-moreInfo">Read more...</a></p>
       </div>
     </div>
     
@@ -479,7 +480,19 @@
 
 </div> <!-- end of container -->
 
-<script src="js/footer-main-min.js"></script>
+<!--build:js js/footer-main-min.js -->
+<script type="application/javascript" src="js/jquery.easing.1.3.js"></script>
+<script src="js/progressbar.js"></script>
+<!--<script type="text/javascript" src="js/packery.pkgd.min-OLD.js"></script>--> <!-- old packery lib supports <IE10 better but munges draggability -->
+<script type="text/javascript" src="js/flickity.pkgd.js"></script>
+<script type="text/javascript" src="js/instafeed.min.js"></script>
+<script type="text/javascript" src="js/card-flip.js"></script>
+<script type="text/javascript" src="js/card-flip-oneSearch.js"></script>
+<script type="text/javascript" src="js/timer-flip.js"></script>
+<!--<script type="text/javascript" src="js/dragabilly.min.js"></script>--> <!-- Currently deactivated -->
+<script type="text/javascript" src="js/functions-base.js"></script>
+<!--<script type="text/javascript" src="js/tota11y.min.js"></script>--> <!-- accessability validator (remove from production) -->
+<!--endbuild-->
 
 
 </body>

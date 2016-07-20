@@ -26,14 +26,14 @@ Element.prototype.toggleClassName = function (a) {
 // ======================= Card Flip =============================== //
 // Source: https://desandro.github.io/3dtransforms/docs/card-flip.html //
 //var init = function() {
-var times = document.getElementById("timerCard");
+var times = document.getElementById("homepage-openingHours");
 
 // Assign click action to flip card question
-document.getElementById("otherTimes").onclick = function() {
+document.getElementById("homepage-openingHours-flip").onclick = function() {
   times.toggleClassName("flipped");
 }
 
 // Assign click reverse the flip card action
-document.getElementById("mainTimes").onclick = function() {
-  $(" #timerCard ").removeClass("flipped")
+document.getElementById("homepage-openingHours-unflip").onclick = function() {
+  $(" #homepage-openingHours ").removeClass("flipped")
 }
