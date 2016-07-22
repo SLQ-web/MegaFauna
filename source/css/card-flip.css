@@ -59,20 +59,21 @@
 	color:#fff;	
 }
 .front {
-	background:teal; /*change the css */
+	background-image:url(../img/flipcard/snakeDog-front.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 
 .back{
-	background-color:teal;
-	background-image:url(../img/cuneiform-tablet.png);
+	background-image:url(../img/flipcard/snakeDog-back.jpg);
 	background-repeat:no-repeat;
-	background-size:80%;
-	background-position:30px 90px;
+	background-size: cover;
+/*	background-position:30px 90px;*/
 }
 
 #homepage-flipcard-flip {
 	padding:0;
-	margin:2em 0 0 0;
+	margin:4em 0 0 0;
     cursor: pointer;
 }
 
