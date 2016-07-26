@@ -3,11 +3,11 @@
 
 #slideCard1 .main-gallery {
     overflow: hidden;
-    height: 178px;
+    height: 155px;
 }
 
 #slideCard1 .gallery-cell {
-    height: 178px;
+    height: 155px;
     padding: 15px;
     width: 100%;
 }
