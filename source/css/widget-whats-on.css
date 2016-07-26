@@ -3,6 +3,7 @@
 
 #homepage-whatsOn .main-gallery {
     overflow: hidden;
+    height: 285px;
 }
 #homepage-whatsOn .gallery-cell {
   margin:0;
