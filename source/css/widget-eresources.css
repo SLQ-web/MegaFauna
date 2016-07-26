@@ -3,11 +3,11 @@
 
 #slideCard1 .main-gallery {
     overflow: hidden;
-    height: 155px;
+    height: 170px;
 }
 
 #slideCard1 .gallery-cell {
-    height: 155px;
+    height: 170px;
     padding: 15px;
     width: 100%;
 }
@@ -50,8 +50,6 @@
 }
 
 /*Responsive fixes for slider cells in mobile view*/
-/*
 @media (max-width: 480px) {
-    #slideCard1 .main-gallery { height: 143px; }
+    #slideCard1 .main-gallery { height: 160px; }
 }
-*/
