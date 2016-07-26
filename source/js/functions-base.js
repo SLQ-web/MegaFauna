@@ -59,6 +59,7 @@ $('.main-gallery').flickity({
   // options
   cellAlign: 'left',
   contain: true,
+  setGallerySize: false,
   autoPlay: 8000,
   prevNextButtons: false,
   pageDots: false,
