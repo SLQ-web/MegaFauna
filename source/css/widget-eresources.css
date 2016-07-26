@@ -50,6 +50,6 @@
 }
 
 /*Responsive fixes for slider cells in mobile view*/
-@media (max-width: 480px) {
+@media (max-width: 767px) {
     #slideCard1 .main-gallery { height: 160px; }
 }
