@@ -2,6 +2,14 @@
 /* ////////////////////////////////// */
 
 /* ==== STYLES FOR QUESTION CARD ==== */
+/*Corin's customised inline styles from homepage*/
+#homepage-flipcard-2 { position:relative; }
+#homepage-flipcard-2 div p{ background: rgba(0, 0, 0, 0.6); position: absolute; bottom: 0;margin:0;padding: 5px;text-align: left;width: 100%;left: 0;}
+img#homepage-flipcard-unflip-2 { margin-top:90px; }
+img#homepage-flipcard-flip-2 { margin-top:90px; }
+
+    /*code for hiding spans in flipcard for GTM registration*/
+    .home .flip-container #homepage-flipcard-2 span.flipped, span.unflipped { display: none; }
 
 .flip-container {
 	perspective: 900px;
@@ -9,7 +17,7 @@
 	width: 100%;
 }
 
-#homepage-flipcard, #homepage-openingHours {
+#homepage-flipcard-1, #homepage-flipcard-2, #homepage-openingHours {
 	height: 100%;
 	position: absolute;
 	transform-origin: right center;
@@ -18,11 +26,11 @@
 	width: 100%;
 }
 
-#homepage-flipcard.flipped, #homepage-openingHours.flipped {
+#homepage-flipcard-1.flipped, #homepage-flipcard-2.flipped, #homepage-openingHours.flipped {
     transform: translateX( -100% ) rotateY( -180deg );
 }
 
-#homepage-flipcard div, #homepage-openingHours div, #onesearch div {
+#homepage-flipcard-1 div, #homepage-flipcard-2 div, #homepage-openingHours div, #onesearch div {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	display: block;
@@ -31,26 +39,21 @@
 	width: 100%;
 }
 
-#homepage-flipcard div h3, #homepage-openingHours div h3 {
+#homepage-flipcard-1 div h3, #homepage-flipcard-2 div h3, #homepage-openingHours div h3 {
     line-height: 1;
     display: inline-block;
 }
-#homepage-flipcard div p, #homepage-openingHours div p { font-weight: normal; }
+#homepage-flipcard-1 div h3 { color: #fff; }
+#homepage-flipcard-1 div p, #homepage-flipcard-2 div p, #homepage-openingHours div p { font-weight: normal; }
 
-#homepage-flipcard .back, #homepage-openingHours .timerBack {
+#homepage-flipcard-1 .back, #homepage-flipcard-2 .back, #homepage-openingHours .timerBack {
 	height: 285px;
 	transform: rotateY( 180deg );
-/*    z-index: 0;*/
-}
-
-#homepage-flipcard .front {
-/*    z-index: 10;*/
 }
 
 .front, .back{
 	text-align:center;
 	padding:1em;
-	background:#333;
 	color:#fff;
 	height: 285px; 
 }
@@ -58,35 +61,48 @@
 .back a:link, .back a:visited{
 	color:#fff;	
 }
-.front {
-	background-image:url(../img/flipcard/snakeDog-front.jpg);
+#homepage-flipcard-1 .front {
+	background:teal;
+}
+#homepage-flipcard-1 .back{
+	background-color:teal;
+	background-image:url(http://www.slq.qld.gov.au/__data/assets/image/0010/346492/cuneiform-tablet.png);
+	background-repeat:no-repeat;
+	background-size:80%;
+	background-position:30px 90px;
+}
+#homepage-flipcard-2 .front {
+	background-image:url(http://www.slq.qld.gov.au/__data/assets/image/0008/346166/snakeDog-front.jpg);
     background-repeat:no-repeat;
     background-size: cover;
 }
 
-.back{
-	background-image:url(../img/flipcard/snakeDog-back.jpg);
+#homepage-flipcard-2 .back{
+	background-image:url(http://www.slq.qld.gov.au/__data/assets/image/0009/346167/snakeDog-back.jpg);
 	background-repeat:no-repeat;
 	background-size: cover;
-/*	background-position:30px 90px;*/
 }
 
-#homepage-flipcard-flip {
+#homepage-flipcard-flip-1, #homepage-flipcard-flip-2 {
 	padding:0;
 	margin:4em 0 0 0;
     cursor: pointer;
 }
 
-#homepage-flipcard-unflip {
+#homepage-flipcard-flip-1 {
+    margin:2em 0 0 0;
+}
+
+#homepage-flipcard-unflip-1, #homepage-flipcard-unflip-2 {
 	padding:0;
 	margin:4em 0 0 0;
     cursor: pointer;
 }
-#homepage-flipcard svg {
+#homepage-flipcard-1 svg, #homepage-flipcard-2 svg {
     margin:4em 0 0 0;
     width: 100%;
 }
-#homepage-flipcard svg img {
+#homepage-flipcard-1 svg img, #homepage-flipcard-2 svg img {
     text-align: center;
     margin: auto 0;
 }
@@ -94,7 +110,6 @@
 /* === STYLES FOR TIMER PANEL === */
 
 #homepage-openingHours .timerFront {
-/*    z-index: 10;*/
     background: #eee;
 }
 
@@ -135,10 +150,14 @@
 }
 
 /* fallback behaviour for IE browsers that do not support 3D transform */
-.no-preserve3d #homepage-flipcard.flipped,
-.no-csstransforms3d #homepage-flipcard.flipped,
-.no-preserve3d #homepage-flipcard.flipped .back,
-.no-csstransforms3d #homepage-flipcard.flipped .back,
+.no-preserve3d #homepage-flipcard-1.flipped,
+.no-csstransforms3d #homepage-flipcard-1.flipped,
+.no-preserve3d #homepage-flipcard-1.flipped .back,
+.no-csstransforms3d #homepage-flipcard-1.flipped .back,
+.no-preserve3d #homepage-flipcard-2.flipped,
+.no-csstransforms3d #homepage-flipcard-2.flipped,
+.no-preserve3d #homepage-flipcard-2.flipped .back,
+.no-csstransforms3d #homepage-flipcard-2.flipped .back,
 .no-preserve3d #onesearch.flipped,
 .no-csstransforms3d #onesearch.flipped,
 .no-preserve3d #onesearch.flipped .back-search,
@@ -151,22 +170,26 @@
 }
 
 /* ensure the back card shows in IE8/9 when toggle clicked */
-.no-csstransforms3d #homepage-flipcard.flipped .back,
+.no-csstransforms3d #homepage-flipcard-1.flipped .back,
+.no-csstransforms3d #homepage-flipcard-2.flipped .back,
 .no-csstransforms3d #onesearch.flipped .back-search,
 .no-csstransforms3d #homepage-openingHours.flipped .timerBack {
     display: block;
 }
 
-/* make the front car visible when page loads in IE8/9 */
-.no-csstransforms3d #homepage-flipcard .front,
+/* make the front card visible when page loads in IE8/9 */
+.no-csstransforms3d #homepage-flipcard-1 .front,
+.no-csstransforms3d #homepage-flipcard-2 .front,
 .no-csstransforms3d #onesearch .front-search,
 .no-csstransforms3d #homepage-openingHours .timerFront  {
     display: block;
 }
 
 /* Swap out visiblity of front card so back card is visible in IE8/9 */
-.no-preserve3d #homepage-flipcard.flipped .front,
-.no-csstransforms3d #homepage-flipcard.flipped .front,
+.no-preserve3d #homepage-flipcard-1.flipped .front,
+.no-csstransforms3d #homepage-flipcard-1.flipped .front,
+.no-preserve3d #homepage-flipcard-2.flipped .front,
+.no-csstransforms3d #homepage-flipcard-2.flipped .front,
 .no-preserve3d #onesearch.flipped .front-search,
 .no-csstransforms3d #onesearch.flipped .front-search,
 .no-preserve3d #homepage-openingHours.flipped .timerFront,

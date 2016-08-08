@@ -17,12 +17,12 @@
 <link rel="stylesheet" href="css/widget-opening-hours.css">
 <link rel="stylesheet" href="css/widget-onesearch.css">
 <link rel="stylesheet" href="css/widget-progress-bar.css">
-<link rel="stylesheet" href="css/widget-other-sites.css">
 <link rel="stylesheet" href="css/widget-whats-on.css">
 <link rel="stylesheet" href="css/widget-eresources.css">
 <link rel="stylesheet" href="css/widget-blogs.css">
 <link rel="stylesheet" href="css/widget-video.css">
 <link rel="stylesheet" href="css/widget-social.css">
+<link rel="stylesheet" href="css/widget-html.css">
 
 <!-- Main Prototype styles -->
 <link rel="stylesheet" href="css/just-grids.css">
@@ -36,7 +36,6 @@
 #instafeed .instafallback {
     display: block;
     height: 285px;
-    background-color: purple;
     background-repeat: no-repeat;
 }
 </style>
@@ -330,12 +329,12 @@
             <div id="homepage-flipcard">
               <div class="front" aria-label="blurred image in varyng shades of grey of a scaly, v-shaped design coil placed on top of a furry object" title="blurred image in varyng shades of grey of a scaly, v-shaped design coil placed on top of a furry object">
                 <svg>
-                  <image xlink:href="img/card-info.svg" id="homepage-flipcard-flip" src="img/time-icon.png" width="64" height="64"/>
+                  <image xlink:href="img/card-info.svg" id="homepage-flipcard-flip" src="./?a=345701:dist/img/card-info.png" width="64" height="64"/>
                 </svg>
               </div>
               <div class="back" aria-label="Photograph of a snake wrapped around the neck of a German Shepherd at the Lone Pine Koala Sanctuary, Fig Tree Pocket, Brisbane, ca.1930" title="Photograph of a snake wrapped around the neck of a German Shepherd at the Lone Pine Koala Sanctuary, Fig Tree Pocket, Brisbane, ca.1930">
                 <svg>
-                  <image xlink:href="img/card-info-unflip.svg" id="homepage-flipcard-unflip" src="img/card-resolveInfo.png" width="64" height="64"/>
+                  <image xlink:href="./?a=345701:dist/img/card-info-unflip.svg" id="homepage-flipcard-unflip" src="./?a=345701:dist/img/card-resolveInfo.png" width="64" height="64"/>
                 </svg>
               </div>
             </div>
@@ -496,13 +495,12 @@
 <!--build:js js/footer-main-min.js -->
 <script type="application/javascript" src="js/jquery.easing.1.3.js"></script>
 <script src="js/progressbar.js"></script>
-<!--<script type="text/javascript" src="js/packery.pkgd.min-OLD.js"></script>--> <!-- old packery lib supports <IE10 better but munges draggability -->
+<!--<script type="text/javascript" src="js/packery.pkgd.min-OLD.js"></script>--> <!-- old packery lib supports <IE10 better but munges draggability. Have now removed packery lib from dom flow -->
 <script type="text/javascript" src="js/flickity.pkgd.js"></script>
 <script type="text/javascript" src="js/instafeed.min.js"></script>
 <script type="text/javascript" src="js/card-flip.js"></script>
 <script type="text/javascript" src="js/card-flip-oneSearch.js"></script>
 <script type="text/javascript" src="js/timer-flip.js"></script>
-<!--<script type="text/javascript" src="js/dragabilly.min.js"></script>--> <!-- Currently deactivated -->
 <script type="text/javascript" src="js/functions-base.js"></script>
 <!--<script type="text/javascript" src="js/tota11y.min.js"></script>--> <!-- accessability validator (remove from production) -->
 <!--endbuild-->

@@ -1,3 +1,47 @@
+/*Corin's styles */
+    body.desktop.home #onesearch .front-search, body.desktop.home #onesearch .back-search {padding: 10px 15px;} /* 4/8/16 SAS */
+    body.tablet.home #onesearch .front-search, body.tablet.home #onesearch .back-search {padding: 10px 15px;} /* 4/8/16 SAS */
+    body.mobile.home #onesearch .front-search, body.mobile.home #onesearch .back-search {padding: 10px} /* 4/8/16 SAS */
+    #onesearch form{margin-bottom:10px;}
+    #onesearch form button{
+        font-weight:400;
+        font-size:16pt;
+        line-height:1em;
+        height:50px;
+        width:120px;
+        background-image:url(http://www.slq.qld.gov.au/__data/assets/file/0003/346728/icon-magnif-glass.svg);
+        background-repeat:no-repeat;
+        background-position: right center;
+        background-size:30px 30px;
+        text-align:left;
+        background-origin: content-box;
+    }
+    .home button#go.searchbutton{ padding-left:10px; font-weight:bold; border-top-width: 3px; /*strange alignment fix*/ }
+    body.mobile.home #onesearch form button{ width: 50px;color: transparent;}
+    #onesearch .back-search input{width:50%}
+    body.mobile.home #onesearch form input{width:230px;}
+    body.mobile.home #onesearch form button { background-position: center center; }
+    #onesearch form input{
+        height:50px;
+        font-size:16pt;
+        padding-left:10px;
+        line-height:1em;
+    }
+
+    #onesearch .back-search button, #onesearch .back-search input, #onesearch .back-search select {
+        height: 50px;
+        border: 4px solid #000;
+        background-color: #fff;
+        border-radius: 0;
+        font-size: 12pt;
+        font-weight: 500;
+        margin-right: 2px
+    }
+
+    #onesearch .homepage-flip-link{font-size:14pt;}
+/* ========================== */
+
+
 form.oneSearch input[type=text] {
     width: 60%;
 }

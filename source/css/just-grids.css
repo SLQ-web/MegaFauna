@@ -10,10 +10,6 @@ html { overflow-y: scroll; }
 
 /* ---- grid ---- */
 
-.grid {
-/*  background: #DDD;*/
-}
-
 .grid-item .grid-content {
     height: 285px;
 }
@@ -30,12 +26,10 @@ html { overflow-y: scroll; }
 .grid-item {
   float: left;
   padding: 5px;
-/*  border: 1px solid red;*/
 }
 
 .grid-content {
     padding: 0;
-    border:solid 1px cyan;
 }
 
 .grid-item.is-dragging,
@@ -53,3 +47,29 @@ html { overflow-y: scroll; }
 }
 
 .gutter-sizer { width: 1%; }
+
+/* Inline homepage styles from Corin */
+.grid h3 { padding-bottom:0; } /*fixing H3s weird spacing in .grid*/
+    body.desktop.home .homepage2016 {
+    clear: both;
+    margin-left: -10px;
+    margin-right: -10px;
+    }
+
+    body.tablet.home .homepage2016 {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+.content .grid table { background: transparent; }
+.grid ul { list-style-position: inside; }
+body.mobile.home .grid-content { background-color:#171717; }
+
+@media (max-width: 767px) {/*Wait what? I thought we weren't doing media queries now?*/
+  .homepage2016 {
+      /*width: 340px;*/
+  }
+}
+
+/* mobile fix to flush grid columns to header and footer */
+body.mobile.home .grid-item { padding: 5px 0px; }

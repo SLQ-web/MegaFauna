@@ -1,0 +1,13 @@
+/* Styles for the plain HTML widgets on homepage */
+
+body.mobile.home .grid-content.homepage-html { background: #fff; }
+.homepage-html a { color:#000; }
+
+body.mobile.home #homepage-html-kurilDhagun, body.mobile.home #homepage-html-children {padding:10px 20px 10px 10px;}
+
+#homepage-html-kurilDhagun {padding:10px 15px;}
+#homepage-html-children {padding:10px 15px;}
+
+#homepage-html-kurilDhagun a, #homepage-html-children a {font-size:90%;}
+
+#homepage-html-kurilDhagun p.aRight a, #homepage-html-children p.aRight a {font-size:100%;}

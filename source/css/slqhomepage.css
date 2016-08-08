@@ -2,22 +2,22 @@
 /* Combine all custom homepage CSS */
 /* ======================================= */
 
+    /* Over rides for SLQ globals.css */
+    .home #content { background: #fff; padding: 0; }
+    .content { width: auto; }
+    body.mobile.home #content { padding: 0; background:none; }
+    body.tablet.home #content { background:none; padding: 0; }
+
+    p { line-height: normal; }
+    a:link, a:visited { text-decoration:underline; }
+    a:link {color:blue;}
+    a:visited { color:purple; }
 
 /* TYPOGRAPHY STYLES */
 /* ////////////////////////////////// */
 
-/*Various custom text sizes */
-.text-xs { font-size: 1rem }
-.text-sm { font-size: 1.2rem }
-.text-md { font-size: 1.3rem; }
-.text-lge { font-size: 2rem; }
-
-h3 { margin-bottom: 1rem; margin-top:0; }
-a:link, a:visited { color: navy; }
-
 /*CE this is lame*/
 h3{font-size:200%}
-
 
 
 /* RANDOM CUSTOM STYLES (YET TO BE SORTED) */

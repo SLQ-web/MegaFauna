@@ -1,47 +1,77 @@
 /* ERESOURCES (FLICKITY) SLIDER */
 /* ////////////////////////////////// */
 
-#slideCard1 .main-gallery {
+/*Corin's customised inline styles from homepage*/
+    body.desktop.home #homepage-eresources .eresources-cell img{max-width:160px;}
+    body.tablet.home #homepage-eresources .eresources-cell img{max-width:120px;}
+    body.mobile.home #homepage-eresources .eresources-cell img{max-width:80px;}
+    body.mobile.home #homepage-eresources {background:#fff;}
+    body.mobile.home #homepage-eresources h3{padding-left:10px;margin-bottom: 0px;}
+    body.tablet.home #homepage-eresources h3{margin-bottom: 5px;}
+    body.mobile.home #homepage-eresources .eresources-description p{padding:0 20px 0 10px;font-size:10pt;}
+    body.mobile.home #homepage-eresources .eresources-cell p{font-size:9pt;}
+    body.tablet.home #homepage-eresources .eresources-cell p{font-size: 0.71em;} /*added style to tablet as text is cut off*/
+    body.mobile.home #homepage-eresources .eresources-cell h5{font-size: 10pt;}
+    #homepage-eresources a { text-decoration:underline; color:#000; }
+
+#homepage-eresources {
+    height: 285px;
     overflow: hidden;
-    height: 170px;
 }
 
-#slideCard1 .gallery-cell {
-    height: 170px;
+/*body.desktop.home #homepage-eresources .eresources-cell {*/
+/*    height: 170px;*/
+/*}*/
+
+body.tablet.home #homepage-eresources .flickity-viewport {
+    height: 165px!important;
+}
+
+body.mobile.home #homepage-eresources .eresources-cell {
+    height: 100%;
+}
+
+body.mobile.home #homepage-eresources .flickity-viewport {
+    height: 159px!important;
+}
+
+#homepage-eresources .eresources-cell {
+    height: 176px;
     padding: 15px;
     width: 100%;
 }
 
-#slideCard1 .gallery-cell img {
+#homepage-eresources .eresources-cell img {
 	float:right;
 }
 
-#slideCard1 .front .main-gallery .gallery-cell, #slideCard1 .back {
-    padding: 10px;
-}
+/*#homepage-eresources .front .eresources-gallery .eresources-cell, .back {*/
+/*    padding: 10px;*/
+/*}*/
 
-.gallery-cell.lynda{
+#homepage-eresources .eresources-cell.lynda{
 	background:gold;
 }
-.gallery-cell.lynda img{
+#homepage-eresources .eresources-cell.lynda img{
 	margin-left:20px;
 	margin-right:25px;
 	padding-top:10px;
 }
-.gallery-cell.anz{
-	background:powderblue;
+#homepage-eresources .eresources-cell.anz{
+	background:#C9FFF9;
 }
 
-.gallery-cell.anz img{
+#homepage-eresources .eresources-cell.anz img{
 	margin-left:20px;
-	height:130px;
+
 }
 
-.gallery-cell.proquest{
-	background: palegreen;
+#homepage-eresources .eresources-cell.proquest, #homepage-eresources .eresources-cell.proquest a{
+	background: #1C8288;
+	color:#fff;
 }
 
-.gallery-cell.proquest img{
+#homepage-eresources .eresources-cell.proquest img{
 	width:200px;
 	margin-left:20px;
 	padding-bottom:40px;
@@ -49,7 +79,14 @@
 	margin-right:30px;
 }
 
-/*Responsive fixes for slider cells in mobile view*/
-@media (max-width: 767px) {
-    #slideCard1 .main-gallery { height: 160px; }
+#homepage-eresources .flickity-page-dots {
+    bottom: 15px;
+}
+
+body.tablet.home #homepage-eresources .flickity-page-dots {
+    bottom: 7px;
+}
+
+body.mobile.home #homepage-eresources .flickity-page-dots {
+    bottom: 5px;
 }

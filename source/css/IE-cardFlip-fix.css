@@ -1,5 +1,9 @@
 /* CARD FLIP FIXES FOR IE8 - IE9 */
 /* ////////////////////////////////// */
 
-#homepage-flipcard .back, #homepage-openingHours .timerBack, #onesearch .back-search { z-index: 0; }
-#homepage-flipcard .front, #homepage-openingHours .timerFront, #onesearch .front-search { z-index: 10; }
+#homepage-flipcard-1 .back, #homepage-flipcard-2 .back, #homepage-openingHours .timerBack, #onesearch .back-search { z-index: 0; }
+#homepage-flipcard-1 .front, #homepage-flipcard-2 .front, #homepage-openingHours .timerFront, #onesearch .front-search { z-index: 10; }
+
+/* Workaround for overlaid text */
+#homepage-flipcard-2 .back p { background: #222; }
+#homepage-blogfeed #wp-post-image { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)"; }

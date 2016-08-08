@@ -3,7 +3,24 @@
 
 #countdown strong { 
     color: #4f94e2; 
-    background: url(../img/wigglylines-defcon-2.svg) repeat-x left bottom;
+    background: url(http://www.slq.qld.gov.au/_admin/?a=345701:dist/img/wigglylines-defcon-2.svg) repeat-x left bottom;
     padding-bottom: 15px; 
     background-size: 15px 20px;
 }
+
+
+/*Corin's customised inline styles from homepage*/
+    body.mobile.home #homepage-openingHours .timerFront{padding: 10px 10px 10px 10px;background:#fff;}
+    body.mobile.home #homepage-openingHours .timerBack{padding: 10px 10px 10px 20px;}
+    #homepage-openingHours .timerFront{padding:10px;background:#fff;}
+    #homepage-openingHours .timerBack{padding:10px;background:#000;color:#fff;}
+    #homepage-openingHours .timerBack p strong{font-size:12pt;}
+    #homepage-openingHours .timerBack p{font-size:10pt;margin-bottom:10px;}
+    #homepage-openingHours .timerBack a{color:#fff}
+    #homepage-openingHours #homepage-openingHours-flip {padding-top:1em;}
+    #homepage-openingHours .timerBack #homepage-openingHours-flip p{color:#fff;}
+    #homepage-openingHours-basicHours{font-size:18pt;}
+    #homepage-openingHours-icon{padding-top:5px;}
+    #homepage-openingHours #countdown strong{color:#000;font-size:12pt;}
+    #homepage-openingHours #countdown {padding-bottom:20px;}
+    #homepage-openingHours-flip, #homepage-openingHours-unflip, #search-lib, #search-web{cursor:pointer; color:blue; text-decoration:underline;}

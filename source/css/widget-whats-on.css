@@ -1,6 +1,33 @@
 /* WHATS ON SLIDER (FLICKITY) */
 /* ////////////////////////////////// */
 
+/*Corin's customised inline styles from homepage*/
+    body.mobile.home #homepage-whatsOn .wideTitle h3 img{max-width:260px;}
+    body.mobile.home #homepage-whatsOn .blockTitle h3 img{max-height:100px;}
+    body.tablet.home #homepage-whatsOn .wideTitle h3 img{max-width:300px;}
+    body.tablet.home #homepage-whatsOn .blockTitle h3 img{max-height:100px;}
+    body.desktop.home #homepage-whatsOn .wideTitle h3 img{max-width:460px;}
+    body.desktop.home #homepage-whatsOn .blockTitle h3 img{max-height:120px;}
+    body.desktop.home #homepage-whatsOn .wideTitle{padding:20px;}
+    body.desktop.home #homepage-whatsOn .blockTitle{padding:20px;}
+    #homepage-whatsOn .homepage-whatsOn-moreInfoLinks p{display:inline;margin-right:10px;}
+    /*body.desktop.home #homepage-whatsOn .homepage-whatsOn-moreInfoLinks p{display:inline;margin-right:10px;}
+    body.tablet.home #homepage-whatsOn .homepage-whatsOn-moreInfoLinks p{display:inline;margin-right:10px;}
+    body.mobile.home #homepage-whatsOn .homepage-whatsOn-moreInfoLinks p{display:inline;margin-right:10px;}*/
+    #homepage-whatsOn .darkBackground{color:#fff;background:#000;}
+    #homepage-whatsOn .darkBackground a{color:#fff;text-decoration:underline}
+    #homepage-whatsOn .lightBackground{color:#000;background:#fff;}
+    #homepage-whatsOn .coverBackground {background-size:cover;}
+
+    body.mobile.home img.homepage-whatsOn-supportersLogos{float:right;width:40px;
+        float: right;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+    body.tablet.home img.homepage-whatsOn-supportersLogos{float:right;width:50px;}
+    body.desktop.home img.homepage-whatsOn-supportersLogos{float:right;width:60px;}
+
 #homepage-whatsOn .main-gallery {
     overflow: hidden;
     height: 285px;
@@ -12,49 +39,19 @@
    height: 285px;
 }
 /* What's on gallery tiles */
-.gallery-cell > div {
-    height: 100%;
+#homepage-whatsOn .gallery-cell > div {
+    height: 285px;
     padding: 15px;
 }
-.gallery-cell a:link, .gallery-cell a:visited {
-    text-decoration:none;
-    color:#000;
-}
-#sow {
-    background-image: url('../img/whats-on/a-state-of-war.jpg');
-    background-size:cover;
-}
-.gallery-cell #sow a:visited, .gallery-cell #sow a:link, #sow p{
+#homepage-whatsOn .gallery-cell a:link, #homepage-whatsOn .gallery-cell a:visited {
     color:#fff;
 }
 
-#iconic {
-    background-image: url('../img/whats-on/iconic-qld.jpg');
-    background-size:cover;
+/* reposition slider cell dots to overlay on slider */
+#homepage-whatsOn .flickity-page-dots {
+    bottom: 5px;
 }
-#uqarch {
-    background-image: url('../img/whats-on/UQ_architecture.jpg');
-    background-size:cover;
-}
-.gallery-cell #uqarch a:visited, .gallery-cell #uqarch a:link, #uqarch p{
-    color:gold;
-}
-#qrf {
-    background-image: url('../img/whats-on/qm-awards.jpg');
-    background-size:cover;
-}
-#qrf h2 {
-    font-size:28pt;
-}
-#aparch {
-    background-image: url('../img/whats-on/asia-pacific-architecture.jpg');
-    background-size:cover;
-}
-#bw {
-    background-image: url('../img/whats-on/black-and-write.jpg');
-    background-size:cover;
-}
-#qldfaces {
-    background-image: url('../img/whats-on/queenslandfaces.jpg');
-    background-size:cover;
+
+#homepage-whatsOn .flickity-page-dots .dot {
+    border: solid 1px #fff;
 }

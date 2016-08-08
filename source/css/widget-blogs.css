@@ -1,9 +1,16 @@
 /* BLOG JSON FEED PANEL STYLES */
 /* ////////////////////////////////// */
 
+/*Corin's customised inline styles from homepage*/
+body.mobile.home #homepage-blogfeed #wp-post-content{ padding:10px 10px; }
+#homepage-blogfeed h3 { font-size:18pt; font-weight:bold; }
+a#homepage-blogfeed-title{ text-decoration:none; }
+.homepage-flip-icon{ float:left; margin-right: 5px; }
+.content #wp-post-content p { color: white; }
+
 #homepage-blogfeed {
     position: relative;
-    background: purple;
+    background-color:#000064;
 }
 #wp-post-image {
     width: 100%;
@@ -13,11 +20,11 @@
     z-index: 5;
     opacity: 0.3;
 }
-#wp-post-content {
+#homepage-blogfeed #wp-post-content {
     z-index: 10;
     color: white;
     opacity: 1;
-    padding: 0px 10px;
+    padding:10px 15px;
     position: relative;
 }
 #wp-post-content a {
