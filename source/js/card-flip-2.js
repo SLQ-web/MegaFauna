@@ -25,15 +25,15 @@ Element.prototype.toggleClassName = function (a) {
 
 // ======================= Card Flip =============================== //
 // Source: https://desandro.github.io/3dtransforms/docs/card-flip.html //
-//var init = function() {
-var card = document.getElementById("homepage-flipcard");
+
+var card2 = document.getElementById("homepage-flipcard-2");
 
 // Assign click action to flip card question
-document.getElementById("homepage-flipcard-flip").onclick = function() {
-  card.toggleClassName("flipped");
+document.getElementById("homepage-flipcard-flip-2").onclick = function() {
+  card2.toggleClassName("flipped");
 }
 
 // Assign click reverse the flip card action
-document.getElementById("homepage-flipcard-unflip").onclick = function() {
-  $(" #homepage-flipcard ").removeClass("flipped")
+document.getElementById("homepage-flipcard-unflip-2").onclick = function() {
+  $(" #homepage-flipcard-2").removeClass("flipped")
 }
