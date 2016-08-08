@@ -2,7 +2,7 @@
 Repo for initial mockup design for Packery inspired homepage. Below is a list of dependencies within the project.
 
 **External JS library dependencies**
-- jQuery 1.9.1 (https://code.jquery.com) - using older version for supporting legacy browsers
+- jQuery 1.9.1 (https://code.jquery.com) - using older version for supporting legacy browsers (currently not using in site implementation)
 - jQuery Easing 1.3 (http://gsgd.co.uk/sandbox/jquery/easing/) for easing jQuery animation
 - Packery 1.4.3 (http://packery.metafizzy.co) - Older version that supports IE8/9 (currently deactivated)
 - Flickity v1.1.1 (http://flickity.metafizzy.co/)
