@@ -4,10 +4,10 @@ Repo for initial mockup design for Packery inspired homepage. Below is a list of
 **External JS library dependencies**
 - jQuery 1.9.1 (https://code.jquery.com) - using older version for supporting legacy browsers (*currently not using in site implementation*)
 - jQuery Easing 1.3 (http://gsgd.co.uk/sandbox/jquery/easing/) for easing jQuery animation
-- Packery 1.4.3 (http://packery.metafizzy.co) - Older version that supports IE8/9 (currently deactivated)
+- Packery 1.4.3 (http://packery.metafizzy.co) - Older version that supports IE8/9 (*currently deactivated*)
 - Flickity v1.1.1 (http://flickity.metafizzy.co/)
 - Card Flip [refactored for legacy browsers] (https://desandro.github.io/3dtransforms/docs/card-flip.html)
-- Draggabilly 2.1.0 (http://draggabilly.desandro.com) - currently deactivated
+- Draggabilly 2.1.0 (http://draggabilly.desandro.com) - *currently deactivated*
 - Modernizr-custom.js (https://modernizr.com/) - custom build of Modernizr script for additional browser support
 - tota11y v0.1.3 (http://github.com/GoogleChrome/accessibility-developer-tools) - Accessiblity Developer Tools
 - RespondJS v1.4.2 (https://github.com/scottjehl/Respond) - Polyfill for CSS3 media queries for IE8.
