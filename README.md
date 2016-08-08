@@ -9,12 +9,12 @@ Repo for initial mockup design for Packery inspired homepage. Below is a list of
 - Card Flip [refactored for legacy browsers] (https://desandro.github.io/3dtransforms/docs/card-flip.html)
 - Draggabilly 2.1.0 (http://draggabilly.desandro.com) - *currently deactivated*
 - Modernizr-custom.js (https://modernizr.com/) - custom build of Modernizr script for additional browser support
-- tota11y v0.1.3 (http://github.com/GoogleChrome/accessibility-developer-tools) - Accessiblity Developer Tools
+- tota11y v0.1.3 (http://github.com/GoogleChrome/accessibility-developer-tools) - Accessiblity Developer Tools (*currently deactivated*)
 - RespondJS v1.4.2 (https://github.com/scottjehl/Respond) - Polyfill for CSS3 media queries for IE8.
 - Instafeed v1.4.1 (https://github.com/stevenschobert/instafeed.js) - Fetches content from Instagram account
 
 **Custom scripts**
-- progressbar.js beta (derivative of http://www.jqueryscript.net/loading/Custom-Viewport-Based-jQuery-Progress-Bar-Plugin-Progressbar-js.html)
+- progressbar.js beta (derivative of http://www.jqueryscript.net/loading/Custom-Viewport-Based-jQuery-Progress-Bar-Plugin-Progressbar-js.html) - *currently not in use*
 - card-flip.js (1&2) beta (derivative of https://desandro.github.io/3dtransforms/docs/card-flip.html)
 - card-flip-oneSearch.js beta (derivative of https://desandro.github.io/3dtransforms/docs/card-flip.html)
 - timer-flip.js beta (derivative of https://desandro.github.io/3dtransforms/docs/card-flip.html)
